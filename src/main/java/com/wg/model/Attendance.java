@@ -2,11 +2,27 @@ package com.wg.model;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Attendance {
-	String studentId;
-	int standard;
-	LocalDate date;
-	Status status;
+	@NotNull(message = "StudentId must not be null")
+	private String studentId;
+	@NotNull(message = "Standard must not be null")
+	@Min(value = 1, message = "standard should be greater than 1")
+	@Max(value = 12, message = "standard should be ")
+	private int standard;
+	@NotNull(message = "Date must not be null")
+	@Past
+	private LocalDate date;
+	@NotNull(message = "Attendance status must not be null")
+	private Status status;
 
 	public Attendance() {
 	}
@@ -16,42 +32,5 @@ public class Attendance {
 		this.standard = standard;
 		this.date = date;
 		this.status = status;
-	}
-
-	public String getStudentId() {
-		return studentId;
-	}
-
-	public void setStudentId(String studentId) {
-		this.studentId = studentId;
-	}
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
-	}
-
-	public int getStandard() {
-		return standard;
-	}
-
-	public void setStandard(int standard) {
-		this.standard = standard;
-	}
-
-	public Status getStatus() {
-		return status;
-	}
-
-	public void setStatus(Status status) {
-		this.status = status;
-	}
-
-	@Override
-	public String toString() {
-		return "standard=" + standard + ", date=" + date + ", status=" + status + '}';
 	}
 }

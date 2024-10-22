@@ -1,19 +1,23 @@
 package com.wg.model;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class CourseMarks {
 
 	private String userId;
+	@NotNull(message = "course id can not be null")
 	private String courseId;
+	@NotNull
+	@Max(value = 100, message = "maximum marks can be 100")
+	@Min(value = 0, message = "minimum marks can be 0")
 	private double marks;
 	private int standard;
-
-	public int getStandard() {
-		return standard;
-	}
-
-	public void setStandard(int standard) {
-		this.standard = standard;
-	}
 
 	public CourseMarks(String userId, String courseId, double marks, int standard) {
 		this.userId = userId;
@@ -24,36 +28,5 @@ public class CourseMarks {
 
 	public CourseMarks() {
 
-	}
-
-	// Getters and Setters
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-
-	public String getCourseId() {
-		return courseId;
-	}
-
-	public void setCourseId(String courseId) {
-		this.courseId = courseId;
-	}
-
-	public double getMarks() {
-		return marks;
-	}
-
-	public void setMarks(double marks) {
-		this.marks = marks;
-	}
-
-	@Override
-	public String toString() {
-		return "CourseMarks{" + "userId='" + userId + '\'' + ", courseId='" + courseId + '\'' + ", marks=" + marks
-				+ '}';
 	}
 }

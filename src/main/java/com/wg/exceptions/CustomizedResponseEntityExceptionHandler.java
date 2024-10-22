@@ -43,8 +43,7 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 	@ExceptionHandler(StandardNotFoundException.class)
 	public final ResponseEntity<ErrorDetails> handleStandardNotFoundExceptions(Exception ex, WebRequest request)
 			throws Exception {
-		// ApiResponse response = new ApiResponse(ex.getMessage(), StatusResponse.Error,
-		// null);
+		// logError(ex, request);
 		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(),
 				request.getDescription(false));
 		return new ResponseEntity<ErrorDetails>(errorDetails, HttpStatus.NOT_FOUND);
@@ -98,4 +97,16 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 				request.getDescription(false));
 		return new ResponseEntity<ErrorDetails>(errorDetails, HttpStatus.BAD_REQUEST);
 	}
+
+//	private void logError(Exception ex, HttpServletRequest request) throws IOException {
+//		logger.error("Error occurred: {}, URL: {}, Method: {}, User: {}, Params: {}, Body: {}", ex.getMessage(),
+//				request.getRequestURL(), request.getMethod(),
+//				request.getUserPrincipal() != null ? request.getUserPrincipal().getName() : "Anonymous",
+//				request.getParameterMap(),
+//				request.getContentLength() > 0
+//						? request.getReader().lines().collect(Collectors.joining(System.lineSeparator()))
+//						: "N/A",
+//				ex);
+//	}
+
 }

@@ -44,6 +44,7 @@ public class FeeDAO extends GenericDAO<Fee> implements InterfaceFeeDAO {
 		String addSQL = String.format(
 				"INSERT INTO Fees (studentId, feeAmount, deadline, fine) VALUES ('%s', '%s', '%s', '%s')",
 				fee.getStudentId(), fee.getFeeAmount(), fee.getDeadline(), fee.getFine());
+		System.out.println(addSQL);
 		boolean flag = executeQuery(addSQL);
 		return flag;
 	}

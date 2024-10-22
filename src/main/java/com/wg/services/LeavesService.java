@@ -31,10 +31,8 @@ public class LeavesService {
 		try {
 			flag = leavesDAO.approveLeave(userId);
 			if (flag == true) {
-				System.out.println("Leave Approved Successfully");
 				return flag;
 			} else {
-				System.out.println("Leave Not approved");
 				return flag;
 			}
 		} catch (ClassNotFoundException | SQLException e) {

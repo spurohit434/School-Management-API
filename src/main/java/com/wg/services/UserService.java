@@ -17,9 +17,10 @@ import com.wg.exceptions.StandardNotFoundException;
 import com.wg.helper.LoggingUtil;
 import com.wg.model.User;
 import com.wg.repository.interfaces.InterfaceUserDAO;
+import com.wg.services.interfaces.InterfaceUserService;
 
 @Service
-public class UserService {
+public class UserService implements InterfaceUserService {
 	private InterfaceUserDAO userDAO;
 	Logger logger = LoggingUtil.getLogger(UserService.class);
 
@@ -31,6 +32,7 @@ public class UserService {
 		this.userDAO = userDAO;
 	}
 
+	@Override
 	public boolean addUser(User user) {
 		boolean flag = false;
 		try {
@@ -59,6 +61,7 @@ public class UserService {
 		return flag;
 	}
 
+	@Override
 	public User getUserById(String userId) {
 		User user = null;
 		try {
@@ -72,6 +75,7 @@ public class UserService {
 		return user;
 	}
 
+	@Override
 	public List<User> getClassDetails(int standard) {
 		List<User> list = null;
 		try {
@@ -85,6 +89,7 @@ public class UserService {
 		return list;
 	}
 
+	@Override
 	public boolean deleteUser(String id) {
 		User user = null;
 		try {
@@ -102,6 +107,7 @@ public class UserService {
 		return false;
 	}
 
+	@Override
 	public int getTotalUserCount() {
 		int count = 0;
 		try {
@@ -112,6 +118,7 @@ public class UserService {
 		return count;
 	}
 
+	@Override
 	public List<User> getAllUser(int pageNumber, int pageSize) {
 		if (pageNumber < 0 || pageSize < 0) {
 			throw new InvalidInputException(" PageNumber or Pagesize can not be negative");
@@ -130,6 +137,7 @@ public class UserService {
 		return users;
 	}
 
+	@Override
 	public User getUserByUsername(String username) {
 		User user = null;
 		try {
@@ -141,6 +149,7 @@ public class UserService {
 		return user;
 	}
 
+	@Override
 	public boolean updateUser(String userId, User user) {
 		User user1 = null;
 		try {

@@ -12,6 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wg.dto.ApiResponseHandler;
@@ -19,10 +20,12 @@ import com.wg.dto.JwtUser;
 import com.wg.model.StatusResponse;
 import com.wg.security.JwtUtil;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/api")
 public class AuthController {
 
 	private final UserDetailsService userDetailsService;
@@ -34,7 +37,7 @@ public class AuthController {
 	private final JwtUtil jwtUtil;
 
 	@PostMapping("/authenticate")
-	public ResponseEntity<Object> authenticateUser(@RequestBody JwtUser user) {
+	public ResponseEntity<Object> authenticateUser(@Valid @RequestBody JwtUser user) {
 		authenticationManager
 				.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
 		UserDetails userDetails = userDetailsService.loadUserByUsername(user.getUsername());

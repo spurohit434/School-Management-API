@@ -2,21 +2,22 @@ package com.wg.model;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Issue {
 
 	private String issueID;
+	@NotNull(message = "Issue message can not be null")
 	private String message;
+	// @NotNull(message = "User Id can not be null")
 	private String userId;
+	@NotNull(message = "Issue status can not be null")
 	private IssuesStatus status;
 	private LocalDate createdAt;
-
-	public LocalDate getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(LocalDate createdAt) {
-		this.createdAt = createdAt;
-	}
 
 	public Issue() {
 	}
@@ -27,48 +28,4 @@ public class Issue {
 		this.userId = userId;
 		this.status = status;
 	}
-
-	public String getIssueID() {
-		return issueID;
-	}
-
-	public void setIssueID(String issueID) {
-		this.issueID = issueID;
-	}
-
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-
-	public IssuesStatus getStatus() {
-		return status;
-	}
-
-	public void setStatus(IssuesStatus status) {
-		this.status = status;
-	}
-
-//	@Override
-//	public String toString() {
-//		return "Issue{" + "issueID='" + issueID + '\'' + ", message='" + message + '\'' + ", userId='" + userId + '\''
-//				+ ", status=" + status + '}';
-//	}
-
-	@Override
-	public String toString() {
-		return "Issue{" + "message='" + message + '\'' + ", userId='" + userId + '\'' + ", status=" + status + '}';
-	}
-
 }

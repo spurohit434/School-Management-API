@@ -2,10 +2,22 @@ package com.wg.model;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Fee {
 	String studentId;
+	@NotNull(message = "fee amount can not be null")
+	@Min(value = 0, message = "fee amount can not be negative")
+	@Max(value = 10000, message = "fee amount should be less than 10000")
 	double feeAmount;
 	LocalDate deadline;
+	@Min(value = 0, message = "fee fine can not be negative")
 	double fine;
 
 	public String getStudentId() {
@@ -22,33 +34,4 @@ public class Fee {
 
 	public Fee() {
 	}
-
-	public void setStudentId(String studentId) {
-		this.studentId = studentId;
-	}
-
-	public double getFeeAmount() {
-		return feeAmount;
-	}
-
-	public void setFeeAmount(double feeAmount) {
-		this.feeAmount = feeAmount;
-	}
-
-	public LocalDate getDeadline() {
-		return deadline;
-	}
-
-	public void setDeadline(LocalDate deadline) {
-		this.deadline = deadline;
-	}
-
-	public double getFine() {
-		return fine;
-	}
-
-	public void setFine(double fine) {
-		this.fine = fine;
-	}
-
 }

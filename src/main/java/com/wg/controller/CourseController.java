@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wg.dto.ApiResponseHandler;
@@ -20,7 +21,10 @@ import com.wg.model.Course;
 import com.wg.model.StatusResponse;
 import com.wg.services.CourseService;
 
+import jakarta.validation.Valid;
+
 @RestController
+@RequestMapping("/api")
 public class CourseController {
 
 	public static final String STANDARD = "Standard";
@@ -68,7 +72,7 @@ public class CourseController {
 	}
 
 	@PostMapping("/course")
-	public ResponseEntity<Object> addCourse(@RequestBody Course course) {
+	public ResponseEntity<Object> addCourse(@Valid @RequestBody Course course) {
 		String courseName = course.getCourseName();
 		int standard = course.getStandard();
 		String randomString = UUID.randomUUID().toString();

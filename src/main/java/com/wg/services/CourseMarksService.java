@@ -6,6 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.wg.exceptions.GeneralException;
+import com.wg.exceptions.NotFoundExceptions;
 import com.wg.model.CourseMarks;
 import com.wg.repository.interfaces.InterfaceCourseMarksDAO;
 
@@ -22,18 +24,13 @@ public class CourseMarksService {
 		this.courseMarksDAO = courseMarksDAO;
 	}
 
-	public void addMarks(CourseMarks courseMarks) {
+	public boolean addMarks(CourseMarks courseMarks) {
 		boolean flag = false;
 		try {
 			flag = courseMarksDAO.addMarks(courseMarks);
-			if (flag == true) {
-				System.out.println("Marks added successfully");
-			} else {
-				System.out.println("Marks cannot be added");
-			}
+			return flag;
 		} catch (ClassNotFoundException | SQLException e) {
-			System.out.println("Marks can not be added" + e.getMessage());
-			// e.printStackTrace();
+			throw new GeneralException("Marks can not be added because " + e.getMessage());
 		}
 	}
 
@@ -41,10 +38,12 @@ public class CourseMarksService {
 		List<CourseMarks> courseMarks = null;
 		try {
 			courseMarks = courseMarksDAO.checkMarks(userId);
+			if (courseMarks == null) {
+				throw new NotFoundExceptions("Marks not found for userID: " + userId);
+			}
 			return courseMarks;
 		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
+			throw new GeneralException("Marks can not be fetched because " + e.getMessage());
 		}
-		return courseMarks;
 	}
 }

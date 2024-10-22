@@ -2,10 +2,19 @@ package com.wg.model;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Notification {
 	String notificationId;
+	@NotNull(message = "User Id can not be null")
 	String userId;
+	@NotNull(message = "Notification description can not be null")
 	String description;
+	@NotNull(message = "Notification type can not be ull")
 	String type;
 	LocalDate dateIssued;
 
@@ -19,52 +28,4 @@ public class Notification {
 
 	public Notification() {
 	}
-
-	public String getNotificationId() {
-		return notificationId;
-	}
-
-	public void setNotificationId(String notificationId) {
-		this.notificationId = notificationId;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public LocalDate getDateIssued() {
-		return dateIssued;
-	}
-
-	public void setDateIssued(LocalDate dateIssued) {
-		this.dateIssued = dateIssued;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	@Override
-	public String toString() {
-		return "Notification{" + "notificationId='" + notificationId + '\'' + ", userId='" + userId + '\''
-				+ ", description='" + description + '\'' + ", dateIssued=" + dateIssued + ", type='" + type + '\''
-				+ '}';
-	}
-
 }

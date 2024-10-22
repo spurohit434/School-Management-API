@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.wg.constants.UserConstants;
+import com.wg.exceptions.GeneralException;
 import com.wg.model.Role;
 import com.wg.model.User;
 import com.wg.repository.interfaces.InterfaceUserDAO;
@@ -84,7 +85,11 @@ public class UserDAO extends GenericDAO<User> implements InterfaceUserDAO {
 		// Build the SQL query string dynamically with LIMIT and OFFSET
 		String selectSQL = String.format("SELECT * FROM User LIMIT %d OFFSET %d", pageSize, offset);
 		// Pass the generated SQL query to the executeGetAllQuery method
-		return executeGetAllQuery(selectSQL);
+		List<User> users = executeGetAllQuery(selectSQL);
+		if (users == null || users.isEmpty()) {
+			return null;
+		}
+		return users;
 	}
 
 	@Override
@@ -98,11 +103,11 @@ public class UserDAO extends GenericDAO<User> implements InterfaceUserDAO {
 				user.getAddress(), user.getUsername(), user.getAge(), user.getEmail(), user.getGender(), user.getRole(),
 				user.getMentorOf(), userId);
 		Boolean flag = null;
-		System.out.println(sqlQuery);
 		try {
 			flag = executeQuery(sqlQuery);
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
+			throw new GeneralException(e.getMessage());
 		}
 		return flag;
 	}

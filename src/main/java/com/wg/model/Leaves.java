@@ -2,11 +2,21 @@ package com.wg.model;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Leaves {
 	String leaveId;
 	String userId;
+	@NotNull(message = "leave content can not be null")
 	String content;
+	@Future
 	LocalDate startDate;
+	@Future
 	LocalDate endDate;
 	LeavesStatus status;
 
@@ -22,59 +32,6 @@ public class Leaves {
 	}
 
 	public Leaves() {
-	}
 
-	public String getLeaveId() {
-		return leaveId;
-	}
-
-	public void setLeaveId(String leaveId) {
-		this.leaveId = leaveId;
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-	public LocalDate getStartDate() {
-		return startDate;
-	}
-
-	public void setStartDate(LocalDate date) {
-		this.startDate = date;
-	}
-
-	public LocalDate getEndDate() {
-		return endDate;
-	}
-
-	public void setEndDate(LocalDate endDate) {
-		this.endDate = endDate;
-	}
-
-	public LeavesStatus getStatus() {
-		return status;
-	}
-
-	public void setStatus(LeavesStatus status) {
-		this.status = status;
-	}
-
-	@Override
-	public String toString() {
-		return "Leaves{" + "leaveId='" + leaveId + '\'' + ", content='" + content + '\'' + ", startDate=" + startDate
-				+ ", endDate=" + endDate + ", status=" + status + '}';
 	}
 }

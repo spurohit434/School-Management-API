@@ -1,12 +1,20 @@
 package com.wg.model;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 public class Course {
 	String courseId;
-	@NotNull(message = "Course Id can not be null")
+	@NotNull(message = "Course name can not be null")
 	String CourseName;
-	@NotNull(message = "Course Id can not be null")
+	@NotNull(message = "Standard can not be null")
+	@Max(value = 12, message = "Course standard should be less than 12")
+	@Min(value = 1, message = "Course standard should be greater than 1")
 	int standard;
 
 	public Course(String courseId, String courseName, int standard) {
@@ -17,34 +25,5 @@ public class Course {
 	}
 
 	public Course() {
-	}
-
-	public String getCourseId() {
-		return courseId;
-	}
-
-	public void setCourseId(String courseId) {
-		this.courseId = courseId;
-	}
-
-	public String getCourseName() {
-		return CourseName;
-	}
-
-	public void setCourseName(String courseName) {
-		CourseName = courseName;
-	}
-
-	public int getStandard() {
-		return standard;
-	}
-
-	public void setStandard(int standard) {
-		this.standard = standard;
-	}
-
-	@Override
-	public String toString() {
-		return "courseName='" + CourseName + '\'' + ", standard=" + standard;
 	}
 }

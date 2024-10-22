@@ -16,7 +16,7 @@ public class LoggingUtil {
 
 			FileHandler fileHandler = new FileHandler(LOG_FILE_NAME, true);
 			fileHandler.setFormatter(new SimpleFormatter());
-			fileHandler.setLevel(Level.ALL);
+			fileHandler.setLevel(Level.INFO);
 
 			Logger rootLogger = Logger.getLogger("");
 			for (java.util.logging.Handler handler : rootLogger.getHandlers()) {

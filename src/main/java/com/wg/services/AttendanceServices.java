@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.wg.exceptions.GeneralException;
 import com.wg.exceptions.StandardNotFoundException;
 import com.wg.helper.LoggingUtil;
 import com.wg.model.Attendance;
@@ -18,7 +19,6 @@ public class AttendanceServices {
 	Logger logger = LoggingUtil.getLogger(AttendanceServices.class);
 
 	public AttendanceServices() {
-
 	}
 
 	@Autowired
@@ -62,8 +62,7 @@ public class AttendanceServices {
 		} catch (ClassNotFoundException | SQLException e) {
 			logger.severe(e.getMessage());
 			e.printStackTrace();
+			throw new GeneralException(e.getMessage());
 		}
-		return flag;
 	}
-
 }

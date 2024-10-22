@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wg.dto.ApiResponseHandler;
@@ -17,7 +18,10 @@ import com.wg.model.Leaves;
 import com.wg.model.StatusResponse;
 import com.wg.services.LeavesService;
 
+import jakarta.validation.Valid;
+
 @RestController
+@RequestMapping("/api")
 public class LeavesController {
 	private LeavesService leavesService;
 
@@ -30,17 +34,32 @@ public class LeavesController {
 	}
 
 	@PutMapping("/user/{id}/leave/approve")
-	public void approveLeave(@PathVariable String id) {
-		leavesService.approveLeave(id);
+	public ResponseEntity<Object> approveLeave(@PathVariable String id) {
+		boolean flag = leavesService.approveLeave(id);
+		if (flag == true) {
+			return ApiResponseHandler.apiResponseHandler("Leaves approved Successfully", StatusResponse.Success,
+					HttpStatus.OK, null);
+		}
+
+		return ApiResponseHandler.apiResponseHandler("Leaves can not be approved", StatusResponse.Error,
+				HttpStatus.BAD_REQUEST, null);
 	}
 
 	@PutMapping("/user/{id}/leave/reject")
-	public void rejectLeave(@PathVariable String id) {
-		leavesService.rejectLeave(id);
+	public ResponseEntity<Object> rejectLeave(@PathVariable String id) {
+		boolean flag = leavesService.rejectLeave(id);
+		if (flag == true) {
+			return ApiResponseHandler.apiResponseHandler("Leaves rejected Successfully", StatusResponse.Success,
+					HttpStatus.OK, null);
+		}
+
+		return ApiResponseHandler.apiResponseHandler("Leaves can not be rejected", StatusResponse.Error,
+				HttpStatus.BAD_REQUEST, null);
 	}
 
 	@PostMapping("/user/{id}/leave")
-	public ResponseEntity<Object> applyLeave(@RequestBody Leaves leave) {
+	public ResponseEntity<Object> applyLeave(@Valid @RequestBody Leaves leave, @PathVariable String id) {
+		leave.setUserId(id);
 		leavesService.applyLeave(leave);
 		return ApiResponseHandler.apiResponseHandler("Leaves applied Successfully", StatusResponse.Success,
 				HttpStatus.OK, leave);

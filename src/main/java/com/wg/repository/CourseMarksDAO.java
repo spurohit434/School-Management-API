@@ -40,7 +40,9 @@ public class CourseMarksDAO extends GenericDAO<CourseMarks> implements Interface
 		List<CourseMarks> courseMarks = new ArrayList<>(); // Initialize as an empty list
 		String sql = String.format("SELECT * FROM CourseMarks WHERE UserId = '%s'", userId);
 		courseMarks = executeGetAllQuery(sql);
-		System.out.println(sql);
+		if (courseMarks == null || courseMarks.isEmpty()) {
+			return null;
+		}
 		return courseMarks;
 	}
 

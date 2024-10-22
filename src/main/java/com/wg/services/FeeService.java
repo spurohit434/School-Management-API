@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.wg.dto.FeeResponse;
 import com.wg.exceptions.FeeNotAddedException;
+import com.wg.exceptions.GeneralException;
 import com.wg.exceptions.NotFoundExceptions;
 import com.wg.helper.LoggingUtil;
 import com.wg.model.Fee;
@@ -35,23 +36,17 @@ public class FeeService {
 		this.userDAO = userDAO;
 	}
 
-	public void payFees(String userId) {
+	public double payFees(String userId) {
 		try {
 			Fee fees = null;
-			try {
-				fees = feeDAO.checkFees(userId);
-				if (fees == null) {
-					System.out.println("Fees not added yet");
-					return;
-				}
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
+			fees = feeDAO.checkFees(userId);
+			if (fees == null) {
+				throw new GeneralException("Fees not added yet for user: " + userId);
 			}
 			double fine = 0;
 			double feesAmount = fees.getFeeAmount();
 			LocalDate deadLine = fees.getDeadline();
 			LocalDate currentDate = LocalDate.now();
-
 			if (currentDate.isAfter(deadLine)) {
 				long overdueDays = ChronoUnit.DAYS.between(deadLine, currentDate);
 				fine = overdueDays * 5.0;
@@ -59,32 +54,24 @@ public class FeeService {
 			System.out.println("The fine is " + fine);
 			double totalFees = feesAmount + fine;
 			System.out.println("Total Payalbe amount is: " + totalFees);
-			if (feesAmount == 0 && fine == 0) {
-				System.out.println("No fee amount to pay");
-				return;
-			}
 			boolean flag = feeDAO.payFees(userId);
 			if (flag == true) {
-				System.out.println("Fees paid successfully");
-				logger.info("Fees paid successfully!!");
-
+				return totalFees;
 			} else {
-				System.out.println("Fees not paid");
-				logger.info("Fees payment unsuccessful!!");
+				throw new GeneralException("Fees can not be paid for user: " + userId);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
+		return 0;
 	}
 
 	public double checkFees(String userId) {
 		try {
 			Fee fees = feeDAO.checkFees(userId);
 			if (fees == null) {
-				System.out.println("Fees not added yet");
 				throw new FeeNotAddedException("Fee not added yet for " + userId);
 			} else {
-				System.out.println("The fees Amount is: " + fees.getFeeAmount());
 				return fees.getFeeAmount();
 			}
 		} catch (SQLException | ClassNotFoundException e) {
@@ -95,6 +82,7 @@ public class FeeService {
 
 	public FeeResponse addFees(Fee fee, String id) {
 		User user = null;
+		fee.setStudentId(id);
 		try {
 			user = userDAO.getUserById(id);
 			if (user == null) {
@@ -102,7 +90,6 @@ public class FeeService {
 			}
 			boolean flag = feeDAO.insertFees(fee);
 			if (flag == true) {
-				System.out.println("Fees successfully added");
 				response.setFeeAdded(true);
 				response.setFeeUpdated(false);
 				response.setFeeAmount(fee.getFeeAmount());
@@ -113,7 +100,6 @@ public class FeeService {
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
-		System.out.println("No records inserted in fee service.");
 		response.setFeeAdded(false);
 		response.setFeeUpdated(false);
 		response.setFeeAmount(0.0);
@@ -124,6 +110,7 @@ public class FeeService {
 
 	public FeeResponse updateFees(Fee fee, String id) {
 		User user = null;
+		fee.setStudentId(id);
 		boolean flag = false;
 		try {
 			user = userDAO.getUserById(id);

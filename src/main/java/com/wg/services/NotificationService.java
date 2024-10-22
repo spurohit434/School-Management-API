@@ -1,6 +1,7 @@
 package com.wg.services;
 
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
@@ -34,6 +35,8 @@ public class NotificationService {
 			String notificationId = randomString.substring(0, desiredLength);
 			notificationId = 'L' + notificationId;
 			notification.setNotificationId(notificationId);
+			LocalDate date = LocalDate.now();
+			notification.setDateIssued(date);
 			sendStatus = notificationDAO.sendNotification(notification);
 			return sendStatus;
 		} catch (ClassNotFoundException | SQLException e) {

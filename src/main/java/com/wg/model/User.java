@@ -5,9 +5,10 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
@@ -17,39 +18,32 @@ import lombok.Setter;
 @Getter
 @Setter
 public class User {
-	@Id
 	private String userId;
-	@Column
+	@Size(min = 1, message = "Name must not be empty.")
 	private String name;
 	@Past
 	private LocalDate dob;
-	@Column
 	private String contactNumber;
 	@NotNull
-	@Column
 	private Role role;
 	@NotNull
-	@Column
 	private String password;
-	@Column
 	private int standard;
-	@Column
 	private String address;
+	@NotBlank(message = "Username must not be null.")
 	@Size(min = 4, message = "username should have atleast 4 characters")
 	@NotNull
-	@Column
 	private String username;
-	@Column
+	@Min(value = 18, message = "Age must be at least 18.")
+	@Max(value = 120, message = "Age must be less than 120.")
 	private int age;
+	@NotBlank(message = "Email must not be null.")
 	@Email
 	private String email;
-	@Column
 	private String gender;
-	@Column
 	private String rollNo;
 	@JsonIgnore
 	private List<Integer> assignedToStandard;
-	@Column
 	private int mentorOf;
 
 	public User() {

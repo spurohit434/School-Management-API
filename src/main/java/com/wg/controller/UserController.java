@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,17 +24,19 @@ import com.wg.helper.PasswordUtil;
 import com.wg.mapper.UserMapper;
 import com.wg.model.StatusResponse;
 import com.wg.model.User;
-import com.wg.services.UserService;
+import com.wg.security.JwtUtil;
+import com.wg.services.interfaces.InterfaceUserService;
 
 import jakarta.validation.Valid;
 
 @RestController
+@RequestMapping("/api")
 public class UserController {
 
-	private UserService userService;
+	private InterfaceUserService userService;
 
 	@Autowired
-	public UserController(UserService userService) {
+	public UserController(InterfaceUserService userService) {
 		this.userService = userService;
 	}
 
@@ -67,7 +71,7 @@ public class UserController {
 			dtos.add(dto);
 		}
 		return ApiResponseHandler.apiResponseHandler("Standard Fetched Successfully", StatusResponse.Success,
-				HttpStatus.OK, dtos);
+				HttpStatus.OK, users);
 	}
 
 	@DeleteMapping("/user/{id}")
@@ -82,24 +86,28 @@ public class UserController {
 	}
 
 	@GetMapping("/users")
-	// @PreAuthorize("hasRole('ADMIN')")
 	public ResponseEntity<Object> getAllUser(@RequestParam(defaultValue = "1") int page,
-			@RequestParam(defaultValue = "10") int size) {
+			@RequestParam(defaultValue = "10") int size, @RequestHeader("Authorization") String token) {
+		String role = getRole(token);
 		// Fetch paginated user list from the service layer
-		List<User> users = userService.getAllUser(page, size);
-		// Get the total number of users (for pagination)
-		int totalElements = userService.getTotalUserCount();
-		// map all the users to the DTO
-		List<UserDto> dtos = new ArrayList<>();
-		for (User user : users) {
-			UserDto dto = UserMapper.mapUser(user);
-			dtos.add(dto);
+		if (role.equalsIgnoreCase("Role_Admin")) {
+			List<User> users = userService.getAllUser(page, size);
+			// Get the total number of users (for pagination)
+			int totalElements = userService.getTotalUserCount();
+			// map all the users to the DTO
+			List<UserDto> dtos = new ArrayList<>();
+			for (User user : users) {
+				UserDto dto = UserMapper.mapUser(user);
+				dtos.add(dto);
+			}
+			// Create PaginatedResponse object
+			PaginatedResponse<UserDto> paginatedResponse = new PaginatedResponse<>(dtos, page, size, totalElements);
+			// Return the paginated response
+			return ApiResponseHandler.apiResponseHandler("User Fetched Successfully", StatusResponse.Success,
+					HttpStatus.OK, paginatedResponse);
 		}
-		// Create PaginatedResponse object
-		PaginatedResponse<UserDto> paginatedResponse = new PaginatedResponse<>(dtos, page, size, totalElements);
-		// Return the paginated response
-		return ApiResponseHandler.apiResponseHandler("User Fetched Successfully", StatusResponse.Success, HttpStatus.OK,
-				paginatedResponse);
+		return ApiResponseHandler.apiResponseHandler("Unauthorized user", StatusResponse.Error, HttpStatus.UNAUTHORIZED,
+				null);
 	}
 
 	@PutMapping("/user/{id}")
@@ -111,5 +119,13 @@ public class UserController {
 		}
 		return ApiResponseHandler.apiResponseHandler("User can not be updated", StatusResponse.Error,
 				HttpStatus.BAD_REQUEST, null);
+	}
+
+	private String getRole(String token) {
+		String jwtToken = token.startsWith("Bearer ") ? token.substring(7) : token;
+		JwtUtil util = new JwtUtil();
+		// Decode and extract claims from the JWT token
+		String role = util.extractRole(jwtToken);
+		return role;
 	}
 }

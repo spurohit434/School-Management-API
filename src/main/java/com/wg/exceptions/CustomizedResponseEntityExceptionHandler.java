@@ -1,11 +1,14 @@
 package com.wg.exceptions;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authorization.AuthorizationDeniedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -27,6 +30,8 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 	@ExceptionHandler(GeneralException.class)
 	public final ResponseEntity<ErrorDetails> handleGeneralExceptions(Exception ex, WebRequest request)
 			throws Exception {
+		logError(ex, request);
+
 		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(),
 				request.getDescription(false));
 		return new ResponseEntity<ErrorDetails>(errorDetails, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -84,6 +89,10 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 	@Override
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatusCode status, WebRequest request) {
+		Map<String, String> errors = new HashMap<>();
+		ex.getBindingResult().getFieldErrors()
+				.forEach(error -> errors.put(error.getField(), error.getDefaultMessage()));
+		System.out.println(errors);
 		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), "Total validation errors: "
 				+ ex.getErrorCount() + " First error: " + ex.getFieldError().getDefaultMessage(),
 				request.getDescription(false));
@@ -93,20 +102,23 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 	@ExceptionHandler(LeaveCanNotApplyException.class)
 	public final ResponseEntity<ErrorDetails> handleLeaveCanNotApplyExceptions(Exception ex, WebRequest request)
 			throws Exception {
+		logError(ex, request);
+
 		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(),
 				request.getDescription(false));
 		return new ResponseEntity<ErrorDetails>(errorDetails, HttpStatus.BAD_REQUEST);
 	}
 
-//	private void logError(Exception ex, HttpServletRequest request) throws IOException {
-//		logger.error("Error occurred: {}, URL: {}, Method: {}, User: {}, Params: {}, Body: {}", ex.getMessage(),
-//				request.getRequestURL(), request.getMethod(),
-//				request.getUserPrincipal() != null ? request.getUserPrincipal().getName() : "Anonymous",
-//				request.getParameterMap(),
-//				request.getContentLength() > 0
-//						? request.getReader().lines().collect(Collectors.joining(System.lineSeparator()))
-//						: "N/A",
-//				ex);
-//	}
+	@ExceptionHandler(AuthorizationDeniedException.class)
+	protected ResponseEntity<ErrorDetails> handleAuthorizationDeniedException(Exception ex, WebRequest request) {
+		ex.printStackTrace();
+		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), ex.getMessage(),
+				request.getDescription(false));
+		return new ResponseEntity<ErrorDetails>(errorDetails, HttpStatus.FORBIDDEN);
+	}
+
+	private void logError(Exception ex, WebRequest request) {
+		logger.error(request, ex);
+	}
 
 }

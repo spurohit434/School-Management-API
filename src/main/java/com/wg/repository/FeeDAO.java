@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import org.springframework.stereotype.Component;
 
 import com.wg.model.Fee;
+import com.wg.model.Transactions;
 import com.wg.repository.interfaces.InterfaceFeeDAO;
 
 @Component
@@ -68,7 +69,15 @@ public class FeeDAO extends GenericDAO<Fee> implements InterfaceFeeDAO {
 	@Override
 	public void addFees(Fee fee) throws SQLException, ClassNotFoundException {
 		// TODO Auto-generated method stub
+	}
 
+	@Override
+	public boolean addTransaction(Transactions transaction) throws ClassNotFoundException, SQLException {
+		String updateSQL = String.format(
+				"Insert into Transactions (studentId ,feeAmount,notes) values ('%s', '%s', '%s') ",
+				transaction.getStudentId(), transaction.getFeeAmount(), transaction.getNotes());
+		boolean flag = executeQuery(updateSQL);
+		return flag;
 	}
 
 }

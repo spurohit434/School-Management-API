@@ -28,7 +28,6 @@ public class CourseMarksController {
 	Scanner scanner = new Scanner(System.in);
 
 	public CourseMarksController() {
-
 	}
 
 	@Autowired

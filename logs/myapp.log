@@ -1,0 +1,2006 @@
+2024-12-04 14:38:35 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-04 14:38:35 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-04 14:38:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 14:38:37 - Finished Spring Data repository scanning in 71 ms. Found 0 JPA repository interfaces.
+2024-12-04 14:38:38 - Tomcat initialized with port 8080 (http)
+2024-12-04 14:38:38 - Starting service [Tomcat]
+2024-12-04 14:38:38 - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-04 14:38:38 - Initializing Spring embedded WebApplicationContext
+2024-12-04 14:38:38 - Root WebApplicationContext: initialization completed in 3172 ms
+2024-12-04 14:38:39 - HikariPool-1 - Starting...
+2024-12-04 14:38:39 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6fd3f4ac-4115-41b6-b21c-0cdf4f6af80a user=SA
+2024-12-04 14:38:39 - HikariPool-1 - Start completed.
+2024-12-04 14:38:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 14:38:39 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-04 14:38:39 - HHH000026: Second-level cache disabled
+2024-12-04 14:38:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 14:38:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 14:38:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 14:38:40 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 14:38:41 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 14:38:41 - LiveReload server is running on port 35729
+2024-12-04 14:38:41 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 14:38:56 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 14:38:56 - Completed initialization in 1 ms
+2024-12-04 14:38:56 - Securing POST /api/authenticate
+2024-12-04 14:38:56 - Set SecurityContextHolder to anonymous SecurityContext
+2024-12-04 14:38:56 - Secured POST /api/authenticate
+2024-12-04 14:38:57 - Authenticated user
+2024-12-04 14:39:03 - Securing GET /api/users?page=1&size=5
+2024-12-04 14:39:03 - Secured GET /api/users?page=1&size=5
+2024-12-04 14:39:12 - Securing GET /api/user/L4f00ae7/marksheet
+2024-12-04 14:39:12 - Secured GET /api/user/L4f00ae7/marksheet
+2024-12-04 14:39:38 - Securing GET /api/attendance/10
+2024-12-04 14:39:38 - Secured GET /api/attendance/10
+2024-12-04 14:39:53 - Securing GET /api/attendance/13
+2024-12-04 14:39:53 - Secured GET /api/attendance/13
+2024-12-04 14:39:53 - Resolved [com.wg.exceptions.StandardNotFoundException: This standard is invalid]
+2024-12-04 14:40:01 - Securing GET /api/attendance/1
+2024-12-04 14:40:01 - Secured GET /api/attendance/1
+2024-12-04 14:40:01 - Resolved [com.wg.exceptions.StandardNotFoundException: Attendance not found for standard: 1]
+2024-12-04 14:40:09 - Securing GET /api/attendance/12
+2024-12-04 14:40:09 - Secured GET /api/attendance/12
+2024-12-04 14:40:09 - Resolved [com.wg.exceptions.StandardNotFoundException: Attendance not found for standard: 12]
+2024-12-04 14:40:14 - Securing GET /api/attendance/11
+2024-12-04 14:40:14 - Secured GET /api/attendance/11
+2024-12-04 14:40:14 - Resolved [com.wg.exceptions.StandardNotFoundException: Attendance not found for standard: 11]
+2024-12-04 14:40:18 - Securing GET /api/attendance/9
+2024-12-04 14:40:18 - Secured GET /api/attendance/9
+2024-12-04 14:40:18 - Resolved [com.wg.exceptions.StandardNotFoundException: Attendance not found for standard: 9]
+2024-12-04 14:40:23 - Securing GET /api/attendance/10
+2024-12-04 14:40:23 - Secured GET /api/attendance/10
+2024-12-04 14:41:40 - Securing GET /api/user/L4f00ae7/marksheet
+2024-12-04 14:41:40 - Secured GET /api/user/L4f00ae7/marksheet
+2024-12-04 15:08:33 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:08:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:08:33 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:08:33 - HikariPool-1 - Shutdown initiated...
+2024-12-04 15:08:33 - HikariPool-1 - Shutdown completed.
+2024-12-04 15:08:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:08:34 - Finished Spring Data repository scanning in 71 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:08:34 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:08:34 - Root WebApplicationContext: initialization completed in 1474 ms
+2024-12-04 15:08:35 - HikariPool-2 - Starting...
+2024-12-04 15:08:35 - HikariPool-2 - Added connection conn20: url=jdbc:h2:mem:bd3eb360-68c2-4e0d-8518-459e4d363531 user=SA
+2024-12-04 15:08:35 - HikariPool-2 - Start completed.
+2024-12-04 15:08:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:08:35 - HHH000026: Second-level cache disabled
+2024-12-04 15:08:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:08:35 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:08:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:08:35 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:08:35 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:08:35 - LiveReload server is running on port 35729
+2024-12-04 15:08:35 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:08:35 - Condition evaluation unchanged
+2024-12-04 15:08:50 - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-12-04 15:08:50 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:08:50 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:08:50 - HikariPool-2 - Shutdown initiated...
+2024-12-04 15:08:50 - HikariPool-2 - Shutdown completed.
+2024-12-04 15:08:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:08:51 - Finished Spring Data repository scanning in 97 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:08:52 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:08:52 - Root WebApplicationContext: initialization completed in 1643 ms
+2024-12-04 15:08:52 - HikariPool-3 - Starting...
+2024-12-04 15:08:52 - HikariPool-3 - Added connection conn30: url=jdbc:h2:mem:35c2ef6f-a164-4889-8414-8af7c3958874 user=SA
+2024-12-04 15:08:52 - HikariPool-3 - Start completed.
+2024-12-04 15:08:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:08:52 - HHH000026: Second-level cache disabled
+2024-12-04 15:08:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:08:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:08:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:08:52 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:08:52 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:08:52 - LiveReload server is running on port 35729
+2024-12-04 15:08:52 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:08:52 - Condition evaluation unchanged
+2024-12-04 15:08:57 - Restarting due to 5 class path changes (1 addition, 1 deletion, 3 modifications)
+2024-12-04 15:08:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:08:57 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:08:57 - HikariPool-3 - Shutdown initiated...
+2024-12-04 15:08:57 - HikariPool-3 - Shutdown completed.
+2024-12-04 15:08:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:08:58 - Finished Spring Data repository scanning in 58 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:08:59 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:08:59 - Root WebApplicationContext: initialization completed in 1404 ms
+2024-12-04 15:08:59 - HikariPool-4 - Starting...
+2024-12-04 15:08:59 - HikariPool-4 - Added connection conn40: url=jdbc:h2:mem:9345baf4-0ce5-4fd3-999e-1fe0b281dae6 user=SA
+2024-12-04 15:08:59 - HikariPool-4 - Start completed.
+2024-12-04 15:08:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:08:59 - HHH000026: Second-level cache disabled
+2024-12-04 15:08:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:08:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:08:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:08:59 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:08:59 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:08:59 - LiveReload server is running on port 35729
+2024-12-04 15:08:59 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:08:59 - Condition evaluation unchanged
+2024-12-04 15:10:33 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:10:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:10:33 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:10:33 - HikariPool-4 - Shutdown initiated...
+2024-12-04 15:10:33 - HikariPool-4 - Shutdown completed.
+2024-12-04 15:10:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:10:35 - Finished Spring Data repository scanning in 59 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:10:35 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:10:35 - Root WebApplicationContext: initialization completed in 1327 ms
+2024-12-04 15:10:35 - HikariPool-5 - Starting...
+2024-12-04 15:10:35 - HikariPool-5 - Added connection conn50: url=jdbc:h2:mem:492b8f07-9b9e-45c1-93ab-07663bae94b9 user=SA
+2024-12-04 15:10:35 - HikariPool-5 - Start completed.
+2024-12-04 15:10:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:10:35 - HHH000026: Second-level cache disabled
+2024-12-04 15:10:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:10:35 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:10:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:10:35 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:10:35 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:10:35 - LiveReload server is running on port 35729
+2024-12-04 15:10:35 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:10:35 - Condition evaluation unchanged
+2024-12-04 15:10:57 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:10:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:10:57 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:10:57 - HikariPool-5 - Shutdown initiated...
+2024-12-04 15:10:57 - HikariPool-5 - Shutdown completed.
+2024-12-04 15:10:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:10:58 - Finished Spring Data repository scanning in 58 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:10:58 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:10:58 - Root WebApplicationContext: initialization completed in 1303 ms
+2024-12-04 15:10:58 - HikariPool-6 - Starting...
+2024-12-04 15:10:58 - HikariPool-6 - Added connection conn60: url=jdbc:h2:mem:b9ecf107-08c4-4680-b629-c1972d007d4d user=SA
+2024-12-04 15:10:58 - HikariPool-6 - Start completed.
+2024-12-04 15:10:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:10:58 - HHH000026: Second-level cache disabled
+2024-12-04 15:10:58 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:10:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:10:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:10:58 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:10:58 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:10:58 - LiveReload server is running on port 35729
+2024-12-04 15:10:58 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:10:58 - Condition evaluation unchanged
+2024-12-04 15:11:46 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:11:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:11:46 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:11:46 - HikariPool-6 - Shutdown initiated...
+2024-12-04 15:11:46 - HikariPool-6 - Shutdown completed.
+2024-12-04 15:11:47 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:11:47 - Finished Spring Data repository scanning in 65 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:11:47 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:11:47 - Root WebApplicationContext: initialization completed in 1280 ms
+2024-12-04 15:11:47 - HikariPool-7 - Starting...
+2024-12-04 15:11:47 - HikariPool-7 - Added connection conn70: url=jdbc:h2:mem:8e33a561-9f22-4b65-b982-998944da6bdc user=SA
+2024-12-04 15:11:47 - HikariPool-7 - Start completed.
+2024-12-04 15:11:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:11:47 - HHH000026: Second-level cache disabled
+2024-12-04 15:11:47 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:11:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:11:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:11:48 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:11:48 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:11:48 - LiveReload server is running on port 35729
+2024-12-04 15:11:48 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:11:48 - Condition evaluation unchanged
+2024-12-04 15:12:05 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:12:05 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:12:05 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:12:05 - HikariPool-7 - Shutdown initiated...
+2024-12-04 15:12:05 - HikariPool-7 - Shutdown completed.
+2024-12-04 15:12:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:12:06 - Finished Spring Data repository scanning in 61 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:12:06 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:12:06 - Root WebApplicationContext: initialization completed in 1290 ms
+2024-12-04 15:12:06 - HikariPool-8 - Starting...
+2024-12-04 15:12:06 - HikariPool-8 - Added connection conn80: url=jdbc:h2:mem:c21ec4ef-e2f3-4a16-98a6-556aedf42a63 user=SA
+2024-12-04 15:12:06 - HikariPool-8 - Start completed.
+2024-12-04 15:12:06 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:12:06 - HHH000026: Second-level cache disabled
+2024-12-04 15:12:06 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:12:06 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:12:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:12:06 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:12:06 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:12:06 - LiveReload server is running on port 35729
+2024-12-04 15:12:06 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:12:06 - Condition evaluation unchanged
+2024-12-04 15:12:12 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:12:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:12:12 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:12:12 - HikariPool-8 - Shutdown initiated...
+2024-12-04 15:12:12 - HikariPool-8 - Shutdown completed.
+2024-12-04 15:12:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:12:14 - Finished Spring Data repository scanning in 63 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:12:14 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:12:14 - Root WebApplicationContext: initialization completed in 1276 ms
+2024-12-04 15:12:14 - HikariPool-9 - Starting...
+2024-12-04 15:12:14 - HikariPool-9 - Added connection conn90: url=jdbc:h2:mem:351b3df7-e5fc-40b4-a2fa-556ffffade7c user=SA
+2024-12-04 15:12:14 - HikariPool-9 - Start completed.
+2024-12-04 15:12:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:12:14 - HHH000026: Second-level cache disabled
+2024-12-04 15:12:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:12:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:12:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:12:14 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:12:14 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:12:14 - LiveReload server is running on port 35729
+2024-12-04 15:12:14 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:12:14 - Condition evaluation unchanged
+2024-12-04 15:13:35 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:13:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:13:35 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:13:35 - HikariPool-9 - Shutdown initiated...
+2024-12-04 15:13:35 - HikariPool-9 - Shutdown completed.
+2024-12-04 15:13:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:13:36 - Finished Spring Data repository scanning in 54 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:13:36 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:13:36 - Root WebApplicationContext: initialization completed in 1277 ms
+2024-12-04 15:13:36 - HikariPool-10 - Starting...
+2024-12-04 15:13:36 - HikariPool-10 - Added connection conn100: url=jdbc:h2:mem:3430546b-4db0-4b82-8958-2f4f00cbb5fa user=SA
+2024-12-04 15:13:36 - HikariPool-10 - Start completed.
+2024-12-04 15:13:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:13:36 - HHH000026: Second-level cache disabled
+2024-12-04 15:13:36 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:13:36 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:13:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:13:36 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:13:36 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:13:36 - LiveReload server is running on port 35729
+2024-12-04 15:13:36 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:13:36 - Condition evaluation unchanged
+2024-12-04 15:14:16 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-04 15:14:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:14:16 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:14:16 - HikariPool-10 - Shutdown initiated...
+2024-12-04 15:14:16 - HikariPool-10 - Shutdown completed.
+2024-12-04 15:14:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:14:18 - Finished Spring Data repository scanning in 67 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:14:18 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:14:18 - Root WebApplicationContext: initialization completed in 1313 ms
+2024-12-04 15:14:18 - HikariPool-11 - Starting...
+2024-12-04 15:14:18 - HikariPool-11 - Added connection conn110: url=jdbc:h2:mem:565dab28-520b-461b-867f-61306a4c3a44 user=SA
+2024-12-04 15:14:18 - HikariPool-11 - Start completed.
+2024-12-04 15:14:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:14:18 - HHH000026: Second-level cache disabled
+2024-12-04 15:14:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:14:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:14:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:14:18 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:14:18 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:14:18 - LiveReload server is running on port 35729
+2024-12-04 15:14:18 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:14:18 - Condition evaluation unchanged
+2024-12-04 15:14:28 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-12-04 15:14:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:14:28 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:14:28 - HikariPool-11 - Shutdown initiated...
+2024-12-04 15:14:28 - HikariPool-11 - Shutdown completed.
+2024-12-04 15:14:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:14:30 - Finished Spring Data repository scanning in 53 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:14:30 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:14:30 - Root WebApplicationContext: initialization completed in 1275 ms
+2024-12-04 15:14:30 - HikariPool-12 - Starting...
+2024-12-04 15:14:30 - HikariPool-12 - Added connection conn120: url=jdbc:h2:mem:7ffa6972-0ec3-4dee-b68e-303cbfd10689 user=SA
+2024-12-04 15:14:30 - HikariPool-12 - Start completed.
+2024-12-04 15:14:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:14:30 - HHH000026: Second-level cache disabled
+2024-12-04 15:14:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:14:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:14:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:14:30 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:14:30 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:14:30 - LiveReload server is running on port 35729
+2024-12-04 15:14:30 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:14:30 - Condition evaluation unchanged
+2024-12-04 15:18:57 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-04 15:18:57 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:18:57 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:18:57 - HikariPool-12 - Shutdown initiated...
+2024-12-04 15:18:57 - HikariPool-12 - Shutdown completed.
+2024-12-04 15:18:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:18:58 - Finished Spring Data repository scanning in 56 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:18:58 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:18:58 - Root WebApplicationContext: initialization completed in 1265 ms
+2024-12-04 15:18:58 - HikariPool-13 - Starting...
+2024-12-04 15:18:58 - HikariPool-13 - Added connection conn130: url=jdbc:h2:mem:fdf363a5-de68-4507-884d-9fc89db193cd user=SA
+2024-12-04 15:18:58 - HikariPool-13 - Start completed.
+2024-12-04 15:18:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:18:58 - HHH000026: Second-level cache disabled
+2024-12-04 15:18:58 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:18:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:18:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:18:59 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:18:59 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:18:59 - LiveReload server is running on port 35729
+2024-12-04 15:18:59 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:18:59 - Condition evaluation unchanged
+2024-12-04 15:19:53 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:19:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:19:53 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:19:53 - HikariPool-13 - Shutdown initiated...
+2024-12-04 15:19:53 - HikariPool-13 - Shutdown completed.
+2024-12-04 15:19:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:19:54 - Finished Spring Data repository scanning in 55 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:19:54 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:19:54 - Root WebApplicationContext: initialization completed in 1205 ms
+2024-12-04 15:19:54 - HikariPool-14 - Starting...
+2024-12-04 15:19:54 - HikariPool-14 - Added connection conn140: url=jdbc:h2:mem:52f70a50-5822-4295-96ec-aeff3972465c user=SA
+2024-12-04 15:19:54 - HikariPool-14 - Start completed.
+2024-12-04 15:19:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:19:54 - HHH000026: Second-level cache disabled
+2024-12-04 15:19:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:19:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:19:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:19:54 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:19:54 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:19:55 - LiveReload server is running on port 35729
+2024-12-04 15:19:55 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:19:55 - Condition evaluation unchanged
+2024-12-04 15:21:17 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-04 15:21:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:21:17 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:21:17 - HikariPool-14 - Shutdown initiated...
+2024-12-04 15:21:17 - HikariPool-14 - Shutdown completed.
+2024-12-04 15:21:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:21:18 - Finished Spring Data repository scanning in 63 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:21:18 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:21:18 - Root WebApplicationContext: initialization completed in 1281 ms
+2024-12-04 15:21:18 - HikariPool-15 - Starting...
+2024-12-04 15:21:18 - HikariPool-15 - Added connection conn150: url=jdbc:h2:mem:aa9877e9-a69c-4ead-bc8c-6c509842a795 user=SA
+2024-12-04 15:21:18 - HikariPool-15 - Start completed.
+2024-12-04 15:21:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:21:18 - HHH000026: Second-level cache disabled
+2024-12-04 15:21:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:21:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:21:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:21:19 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:21:19 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:21:19 - LiveReload server is running on port 35729
+2024-12-04 15:21:19 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:21:19 - Condition evaluation unchanged
+2024-12-04 15:23:14 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:23:14 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:23:14 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:23:14 - HikariPool-15 - Shutdown initiated...
+2024-12-04 15:23:14 - HikariPool-15 - Shutdown completed.
+2024-12-04 15:23:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:23:15 - Finished Spring Data repository scanning in 61 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:23:15 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:23:16 - Root WebApplicationContext: initialization completed in 1380 ms
+2024-12-04 15:23:16 - HikariPool-16 - Starting...
+2024-12-04 15:23:16 - HikariPool-16 - Added connection conn160: url=jdbc:h2:mem:cfbe5ba7-199f-4e05-83df-a9ac41f1d12a user=SA
+2024-12-04 15:23:16 - HikariPool-16 - Start completed.
+2024-12-04 15:23:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:23:16 - HHH000026: Second-level cache disabled
+2024-12-04 15:23:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:23:16 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:23:16 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:23:16 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:23:16 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:23:16 - LiveReload server is running on port 35729
+2024-12-04 15:23:16 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:23:16 - Condition evaluation unchanged
+2024-12-04 15:23:35 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:23:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:23:35 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:23:35 - HikariPool-16 - Shutdown initiated...
+2024-12-04 15:23:35 - HikariPool-16 - Shutdown completed.
+2024-12-04 15:23:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:23:36 - Finished Spring Data repository scanning in 59 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:23:36 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:23:36 - Root WebApplicationContext: initialization completed in 1262 ms
+2024-12-04 15:23:36 - HikariPool-17 - Starting...
+2024-12-04 15:23:36 - HikariPool-17 - Added connection conn170: url=jdbc:h2:mem:a4ebc2ec-baf1-4a6c-962f-5a0453b6bcbc user=SA
+2024-12-04 15:23:36 - HikariPool-17 - Start completed.
+2024-12-04 15:23:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:23:36 - HHH000026: Second-level cache disabled
+2024-12-04 15:23:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:23:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:23:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:23:37 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:23:37 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:23:37 - LiveReload server is running on port 35729
+2024-12-04 15:23:37 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:23:37 - Condition evaluation unchanged
+2024-12-04 15:25:02 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:25:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:25:02 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:25:02 - HikariPool-17 - Shutdown initiated...
+2024-12-04 15:25:02 - HikariPool-17 - Shutdown completed.
+2024-12-04 15:25:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:25:04 - Finished Spring Data repository scanning in 57 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:25:04 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:25:04 - Root WebApplicationContext: initialization completed in 1238 ms
+2024-12-04 15:25:04 - HikariPool-18 - Starting...
+2024-12-04 15:25:04 - HikariPool-18 - Added connection conn180: url=jdbc:h2:mem:35754906-0569-41a6-aafe-a9e007401825 user=SA
+2024-12-04 15:25:04 - HikariPool-18 - Start completed.
+2024-12-04 15:25:04 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:25:04 - HHH000026: Second-level cache disabled
+2024-12-04 15:25:04 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:25:04 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:25:04 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:25:04 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:25:04 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:25:04 - LiveReload server is running on port 35729
+2024-12-04 15:25:04 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:25:04 - Condition evaluation unchanged
+2024-12-04 15:25:12 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:25:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:25:12 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:25:12 - HikariPool-18 - Shutdown initiated...
+2024-12-04 15:25:12 - HikariPool-18 - Shutdown completed.
+2024-12-04 15:25:13 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:25:13 - Finished Spring Data repository scanning in 55 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:25:14 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:25:14 - Root WebApplicationContext: initialization completed in 1184 ms
+2024-12-04 15:25:14 - HikariPool-19 - Starting...
+2024-12-04 15:25:14 - HikariPool-19 - Added connection conn190: url=jdbc:h2:mem:dea9ce7a-5c8e-4ce5-99ef-b434b889748e user=SA
+2024-12-04 15:25:14 - HikariPool-19 - Start completed.
+2024-12-04 15:25:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:25:14 - HHH000026: Second-level cache disabled
+2024-12-04 15:25:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:25:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:25:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:25:14 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:25:14 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:25:14 - LiveReload server is running on port 35729
+2024-12-04 15:25:14 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:25:14 - Condition evaluation unchanged
+2024-12-04 15:25:42 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:25:42 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:25:42 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:25:42 - HikariPool-19 - Shutdown initiated...
+2024-12-04 15:25:42 - HikariPool-19 - Shutdown completed.
+2024-12-04 15:25:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:25:43 - Finished Spring Data repository scanning in 59 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:25:43 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:25:43 - Root WebApplicationContext: initialization completed in 1275 ms
+2024-12-04 15:25:43 - HikariPool-20 - Starting...
+2024-12-04 15:25:43 - HikariPool-20 - Added connection conn200: url=jdbc:h2:mem:8d44c8e4-a210-43e1-825f-076de8889136 user=SA
+2024-12-04 15:25:43 - HikariPool-20 - Start completed.
+2024-12-04 15:25:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:25:43 - HHH000026: Second-level cache disabled
+2024-12-04 15:25:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:25:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:25:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:25:43 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:25:43 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:25:44 - LiveReload server is running on port 35729
+2024-12-04 15:25:44 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:25:44 - Condition evaluation unchanged
+2024-12-04 15:26:02 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 15:26:02 - Completed initialization in 2 ms
+2024-12-04 15:26:02 - Securing GET /api/user/L209127a/fee
+2024-12-04 15:26:02 - Secured GET /api/user/L209127a/fee
+2024-12-04 15:26:02 - Resolved [com.wg.exceptions.FeeNotAddedException: Fee not added yet for L209127a]
+2024-12-04 15:26:08 - Securing POST /api/user/L209127a/fee
+2024-12-04 15:26:08 - Secured POST /api/user/L209127a/fee
+2024-12-04 15:26:20 - Securing GET /api/user/L209127a/fee
+2024-12-04 15:26:20 - Secured GET /api/user/L209127a/fee
+2024-12-04 15:26:38 - Securing PATCH /api/user/L209127a/fee
+2024-12-04 15:26:38 - Secured PATCH /api/user/L209127a/fee
+2024-12-04 15:45:32 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:45:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:45:32 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:45:32 - HikariPool-20 - Shutdown initiated...
+2024-12-04 15:45:32 - HikariPool-20 - Shutdown completed.
+2024-12-04 15:45:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:45:34 - Finished Spring Data repository scanning in 108 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:45:34 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:45:34 - Root WebApplicationContext: initialization completed in 2337 ms
+2024-12-04 15:45:35 - HikariPool-21 - Starting...
+2024-12-04 15:45:35 - HikariPool-21 - Added connection conn210: url=jdbc:h2:mem:430f5c4e-9157-4ed2-b45b-82ec6f381c03 user=SA
+2024-12-04 15:45:35 - HikariPool-21 - Start completed.
+2024-12-04 15:45:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:45:35 - HHH000026: Second-level cache disabled
+2024-12-04 15:45:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:45:35 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:45:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:45:35 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:45:35 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:45:35 - LiveReload server is running on port 35729
+2024-12-04 15:45:35 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:45:35 - Condition evaluation unchanged
+2024-12-04 15:45:46 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:45:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:45:46 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:45:46 - HikariPool-21 - Shutdown initiated...
+2024-12-04 15:45:46 - HikariPool-21 - Shutdown completed.
+2024-12-04 15:45:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:45:48 - Finished Spring Data repository scanning in 75 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:45:48 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:45:48 - Root WebApplicationContext: initialization completed in 1946 ms
+2024-12-04 15:45:48 - HikariPool-22 - Starting...
+2024-12-04 15:45:48 - HikariPool-22 - Added connection conn220: url=jdbc:h2:mem:8800dbe1-f6ef-4f1e-bca5-88afe10146c1 user=SA
+2024-12-04 15:45:48 - HikariPool-22 - Start completed.
+2024-12-04 15:45:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:45:48 - HHH000026: Second-level cache disabled
+2024-12-04 15:45:48 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:45:48 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:45:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:45:48 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:45:49 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:45:49 - LiveReload server is running on port 35729
+2024-12-04 15:45:49 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:45:49 - Condition evaluation unchanged
+2024-12-04 15:47:38 - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-04 15:47:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:47:38 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:47:38 - HikariPool-22 - Shutdown initiated...
+2024-12-04 15:47:38 - HikariPool-22 - Shutdown completed.
+2024-12-04 15:47:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:47:40 - Finished Spring Data repository scanning in 94 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:47:40 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:47:40 - Root WebApplicationContext: initialization completed in 2009 ms
+2024-12-04 15:47:40 - HikariPool-23 - Starting...
+2024-12-04 15:47:40 - HikariPool-23 - Added connection conn230: url=jdbc:h2:mem:fc1a45ff-b594-4dcd-b5bb-9c48f092c5b1 user=SA
+2024-12-04 15:47:40 - HikariPool-23 - Start completed.
+2024-12-04 15:47:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:47:40 - HHH000026: Second-level cache disabled
+2024-12-04 15:47:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:47:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:47:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:47:40 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:47:40 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:47:40 - LiveReload server is running on port 35729
+2024-12-04 15:47:40 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:47:40 - Condition evaluation unchanged
+2024-12-04 15:47:55 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-12-04 15:47:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:47:55 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:47:55 - HikariPool-23 - Shutdown initiated...
+2024-12-04 15:47:55 - HikariPool-23 - Shutdown completed.
+2024-12-04 15:47:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:47:57 - Finished Spring Data repository scanning in 71 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:47:57 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:47:57 - Root WebApplicationContext: initialization completed in 1839 ms
+2024-12-04 15:47:57 - HikariPool-24 - Starting...
+2024-12-04 15:47:57 - HikariPool-24 - Added connection conn240: url=jdbc:h2:mem:544e76c1-5185-4927-af5f-b519c198b902 user=SA
+2024-12-04 15:47:57 - HikariPool-24 - Start completed.
+2024-12-04 15:47:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:47:57 - HHH000026: Second-level cache disabled
+2024-12-04 15:47:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:47:57 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:47:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:47:57 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:47:57 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:47:57 - LiveReload server is running on port 35729
+2024-12-04 15:47:57 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:47:57 - Condition evaluation unchanged
+2024-12-04 15:48:16 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:48:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:48:16 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:48:16 - HikariPool-24 - Shutdown initiated...
+2024-12-04 15:48:16 - HikariPool-24 - Shutdown completed.
+2024-12-04 15:48:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:48:18 - Finished Spring Data repository scanning in 76 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:48:18 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:48:18 - Root WebApplicationContext: initialization completed in 1926 ms
+2024-12-04 15:48:18 - HikariPool-25 - Starting...
+2024-12-04 15:48:18 - HikariPool-25 - Added connection conn250: url=jdbc:h2:mem:415d8ed2-6134-4ce3-b5c5-0f8fbe89cc21 user=SA
+2024-12-04 15:48:18 - HikariPool-25 - Start completed.
+2024-12-04 15:48:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:48:18 - HHH000026: Second-level cache disabled
+2024-12-04 15:48:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:48:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:48:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:48:18 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:48:18 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:48:18 - LiveReload server is running on port 35729
+2024-12-04 15:48:19 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:48:19 - Condition evaluation unchanged
+2024-12-04 15:48:27 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-12-04 15:48:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:48:27 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:48:27 - HikariPool-25 - Shutdown initiated...
+2024-12-04 15:48:27 - HikariPool-25 - Shutdown completed.
+2024-12-04 15:48:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:48:29 - Finished Spring Data repository scanning in 103 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:48:29 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:48:29 - Root WebApplicationContext: initialization completed in 1611 ms
+2024-12-04 15:48:29 - HikariPool-26 - Starting...
+2024-12-04 15:48:29 - HikariPool-26 - Added connection conn260: url=jdbc:h2:mem:2489e5b8-4444-4562-9b6b-ce7445f2f172 user=SA
+2024-12-04 15:48:29 - HikariPool-26 - Start completed.
+2024-12-04 15:48:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:48:29 - HHH000026: Second-level cache disabled
+2024-12-04 15:48:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:48:29 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:48:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:48:29 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:48:29 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:48:29 - LiveReload server is running on port 35729
+2024-12-04 15:48:29 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:48:29 - Condition evaluation unchanged
+2024-12-04 15:48:34 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:48:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:48:34 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:48:34 - HikariPool-26 - Shutdown initiated...
+2024-12-04 15:48:34 - HikariPool-26 - Shutdown completed.
+2024-12-04 15:48:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:48:37 - Finished Spring Data repository scanning in 77 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:48:37 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:48:37 - Root WebApplicationContext: initialization completed in 2595 ms
+2024-12-04 15:48:37 - HikariPool-27 - Starting...
+2024-12-04 15:48:37 - HikariPool-27 - Added connection conn270: url=jdbc:h2:mem:249a24f0-1341-4bf7-b310-5d5433315d3a user=SA
+2024-12-04 15:48:37 - HikariPool-27 - Start completed.
+2024-12-04 15:48:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:48:37 - HHH000026: Second-level cache disabled
+2024-12-04 15:48:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:48:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:48:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:48:37 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:48:37 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:48:37 - LiveReload server is running on port 35729
+2024-12-04 15:48:37 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:48:37 - Condition evaluation unchanged
+2024-12-04 15:52:33 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:52:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:52:33 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:52:33 - HikariPool-27 - Shutdown initiated...
+2024-12-04 15:52:33 - HikariPool-27 - Shutdown completed.
+2024-12-04 15:52:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:52:35 - Finished Spring Data repository scanning in 96 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:52:35 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:52:35 - Root WebApplicationContext: initialization completed in 2058 ms
+2024-12-04 15:52:35 - HikariPool-28 - Starting...
+2024-12-04 15:52:35 - HikariPool-28 - Added connection conn280: url=jdbc:h2:mem:cde2a73f-1bb2-48b5-8edc-20497f3ec102 user=SA
+2024-12-04 15:52:35 - HikariPool-28 - Start completed.
+2024-12-04 15:52:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:52:35 - HHH000026: Second-level cache disabled
+2024-12-04 15:52:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:52:35 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:52:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:52:35 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:52:36 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:52:36 - LiveReload server is running on port 35729
+2024-12-04 15:52:36 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:52:36 - Condition evaluation unchanged
+2024-12-04 15:55:13 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:55:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:55:13 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:55:13 - HikariPool-28 - Shutdown initiated...
+2024-12-04 15:55:13 - HikariPool-28 - Shutdown completed.
+2024-12-04 15:55:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:55:14 - Finished Spring Data repository scanning in 71 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:55:14 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:55:14 - Root WebApplicationContext: initialization completed in 1503 ms
+2024-12-04 15:55:14 - HikariPool-29 - Starting...
+2024-12-04 15:55:14 - HikariPool-29 - Added connection conn290: url=jdbc:h2:mem:319e9b4f-4861-43d4-a0ac-aafdbaef11a9 user=SA
+2024-12-04 15:55:14 - HikariPool-29 - Start completed.
+2024-12-04 15:55:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:55:14 - HHH000026: Second-level cache disabled
+2024-12-04 15:55:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:55:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:55:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:55:14 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:55:15 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:55:15 - LiveReload server is running on port 35729
+2024-12-04 15:55:15 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:55:15 - Condition evaluation unchanged
+2024-12-04 15:55:18 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 15:55:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:55:18 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 15:55:18 - HikariPool-29 - Shutdown initiated...
+2024-12-04 15:55:18 - HikariPool-29 - Shutdown completed.
+2024-12-04 15:55:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 15:55:20 - Finished Spring Data repository scanning in 99 ms. Found 0 JPA repository interfaces.
+2024-12-04 15:55:20 - Tomcat initialized with port 8080 (http)
+2024-12-04 15:55:20 - Root WebApplicationContext: initialization completed in 2185 ms
+2024-12-04 15:55:20 - HikariPool-30 - Starting...
+2024-12-04 15:55:20 - HikariPool-30 - Added connection conn300: url=jdbc:h2:mem:883b691d-bfa3-4e49-94dc-6258258d2689 user=SA
+2024-12-04 15:55:20 - HikariPool-30 - Start completed.
+2024-12-04 15:55:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 15:55:20 - HHH000026: Second-level cache disabled
+2024-12-04 15:55:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 15:55:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 15:55:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 15:55:20 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 15:55:20 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 15:55:21 - LiveReload server is running on port 35729
+2024-12-04 15:55:21 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 15:55:21 - Condition evaluation unchanged
+2024-12-04 16:14:55 - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-12-04 16:14:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:14:55 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:14:55 - HikariPool-30 - Shutdown initiated...
+2024-12-04 16:14:55 - HikariPool-30 - Shutdown completed.
+2024-12-04 16:14:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:14:57 - Finished Spring Data repository scanning in 72 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:14:58 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:14:58 - Root WebApplicationContext: initialization completed in 2071 ms
+2024-12-04 16:14:58 - HikariPool-31 - Starting...
+2024-12-04 16:14:58 - HikariPool-31 - Added connection conn310: url=jdbc:h2:mem:2214dc0e-bdfe-44d9-a98b-8e345a939be5 user=SA
+2024-12-04 16:14:58 - HikariPool-31 - Start completed.
+2024-12-04 16:14:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:14:58 - HHH000026: Second-level cache disabled
+2024-12-04 16:14:58 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:14:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:14:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:14:58 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:14:58 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:14:58 - LiveReload server is running on port 35729
+2024-12-04 16:14:58 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:14:58 - Condition evaluation unchanged
+2024-12-04 16:15:20 - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-12-04 16:15:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:15:20 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:15:20 - HikariPool-31 - Shutdown initiated...
+2024-12-04 16:15:20 - HikariPool-31 - Shutdown completed.
+2024-12-04 16:15:22 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:15:22 - Finished Spring Data repository scanning in 78 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:15:22 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:15:23 - Root WebApplicationContext: initialization completed in 2015 ms
+2024-12-04 16:15:23 - HikariPool-32 - Starting...
+2024-12-04 16:15:23 - HikariPool-32 - Added connection conn320: url=jdbc:h2:mem:a79e6c26-3c72-44e4-9442-77107ec0425e user=SA
+2024-12-04 16:15:23 - HikariPool-32 - Start completed.
+2024-12-04 16:15:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:15:23 - HHH000026: Second-level cache disabled
+2024-12-04 16:15:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:15:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:15:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:15:23 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:15:23 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:15:23 - LiveReload server is running on port 35729
+2024-12-04 16:15:23 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:15:23 - Condition evaluation unchanged
+2024-12-04 16:16:08 - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-12-04 16:16:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:16:08 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:16:08 - HikariPool-32 - Shutdown initiated...
+2024-12-04 16:16:08 - HikariPool-32 - Shutdown completed.
+2024-12-04 16:16:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:16:10 - Finished Spring Data repository scanning in 74 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:16:10 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:16:10 - Root WebApplicationContext: initialization completed in 1915 ms
+2024-12-04 16:16:10 - HikariPool-33 - Starting...
+2024-12-04 16:16:10 - HikariPool-33 - Added connection conn330: url=jdbc:h2:mem:a3c36303-4b62-4f7d-8287-93c792e80051 user=SA
+2024-12-04 16:16:10 - HikariPool-33 - Start completed.
+2024-12-04 16:16:10 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:16:10 - HHH000026: Second-level cache disabled
+2024-12-04 16:16:10 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:16:10 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:16:10 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:16:10 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:16:11 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:16:11 - LiveReload server is running on port 35729
+2024-12-04 16:16:11 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:16:11 - Condition evaluation unchanged
+2024-12-04 16:17:41 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 16:17:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:17:41 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:17:41 - HikariPool-33 - Shutdown initiated...
+2024-12-04 16:17:41 - HikariPool-33 - Shutdown completed.
+2024-12-04 16:17:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:17:43 - Finished Spring Data repository scanning in 74 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:17:43 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:17:43 - Root WebApplicationContext: initialization completed in 2025 ms
+2024-12-04 16:17:43 - HikariPool-34 - Starting...
+2024-12-04 16:17:43 - HikariPool-34 - Added connection conn340: url=jdbc:h2:mem:8f7364b1-c6f1-4bdf-b647-66ccfabf3484 user=SA
+2024-12-04 16:17:43 - HikariPool-34 - Start completed.
+2024-12-04 16:17:43 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:17:43 - HHH000026: Second-level cache disabled
+2024-12-04 16:17:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:17:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:17:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:17:43 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:17:43 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:17:43 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:17:43 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:17:43 - HikariPool-34 - Shutdown initiated...
+2024-12-04 16:17:43 - HikariPool-34 - Shutdown completed.
+2024-12-04 16:17:43 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:17:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:17:53 - Finished Spring Data repository scanning in 71 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:17:53 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:17:54 - Root WebApplicationContext: initialization completed in 1807 ms
+2024-12-04 16:17:54 - HikariPool-35 - Starting...
+2024-12-04 16:17:54 - HikariPool-35 - Added connection conn348: url=jdbc:h2:mem:22a45287-540a-44f5-a0d9-cd98df6d3a6b user=SA
+2024-12-04 16:17:54 - HikariPool-35 - Start completed.
+2024-12-04 16:17:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:17:54 - HHH000026: Second-level cache disabled
+2024-12-04 16:17:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:17:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:17:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:17:54 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:17:54 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:17:54 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:17:54 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:17:54 - HikariPool-35 - Shutdown initiated...
+2024-12-04 16:17:54 - HikariPool-35 - Shutdown completed.
+2024-12-04 16:17:54 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:18:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:18:01 - Finished Spring Data repository scanning in 97 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:18:01 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:18:01 - Root WebApplicationContext: initialization completed in 1869 ms
+2024-12-04 16:18:01 - HikariPool-36 - Starting...
+2024-12-04 16:18:01 - HikariPool-36 - Added connection conn353: url=jdbc:h2:mem:70523acd-8598-45ed-b3bf-54e4f6dc7f34 user=SA
+2024-12-04 16:18:01 - HikariPool-36 - Start completed.
+2024-12-04 16:18:01 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:18:01 - HHH000026: Second-level cache disabled
+2024-12-04 16:18:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:18:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:18:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:18:01 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:18:01 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:18:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:18:01 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:18:01 - HikariPool-36 - Shutdown initiated...
+2024-12-04 16:18:01 - HikariPool-36 - Shutdown completed.
+2024-12-04 16:18:01 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:18:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:18:19 - Finished Spring Data repository scanning in 83 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:18:19 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:18:19 - Root WebApplicationContext: initialization completed in 1962 ms
+2024-12-04 16:18:19 - HikariPool-37 - Starting...
+2024-12-04 16:18:19 - HikariPool-37 - Added connection conn357: url=jdbc:h2:mem:b24f5f98-94f0-4596-9f08-674ec03c7ca7 user=SA
+2024-12-04 16:18:19 - HikariPool-37 - Start completed.
+2024-12-04 16:18:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:18:19 - HHH000026: Second-level cache disabled
+2024-12-04 16:18:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:18:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:18:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:18:19 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:18:19 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:18:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:18:19 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:18:19 - HikariPool-37 - Shutdown initiated...
+2024-12-04 16:18:19 - HikariPool-37 - Shutdown completed.
+2024-12-04 16:18:19 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:19:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:19:02 - Finished Spring Data repository scanning in 80 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:19:02 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:19:02 - Root WebApplicationContext: initialization completed in 1879 ms
+2024-12-04 16:19:02 - HikariPool-38 - Starting...
+2024-12-04 16:19:02 - HikariPool-38 - Added connection conn362: url=jdbc:h2:mem:b81cc0c7-0451-42eb-b7b9-f50e9058967f user=SA
+2024-12-04 16:19:02 - HikariPool-38 - Start completed.
+2024-12-04 16:19:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:19:02 - HHH000026: Second-level cache disabled
+2024-12-04 16:19:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:19:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:19:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:02 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:19:02 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:19:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:02 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:19:02 - HikariPool-38 - Shutdown initiated...
+2024-12-04 16:19:02 - HikariPool-38 - Shutdown completed.
+2024-12-04 16:19:02 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:19:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:19:07 - Finished Spring Data repository scanning in 67 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:19:07 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:19:07 - Root WebApplicationContext: initialization completed in 1809 ms
+2024-12-04 16:19:07 - HikariPool-39 - Starting...
+2024-12-04 16:19:07 - HikariPool-39 - Added connection conn367: url=jdbc:h2:mem:2af44411-30ca-45ac-8b66-0dca8f81e9ea user=SA
+2024-12-04 16:19:07 - HikariPool-39 - Start completed.
+2024-12-04 16:19:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:19:07 - HHH000026: Second-level cache disabled
+2024-12-04 16:19:07 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:19:07 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:19:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:07 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:19:08 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:19:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:08 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:19:08 - HikariPool-39 - Shutdown initiated...
+2024-12-04 16:19:08 - HikariPool-39 - Shutdown completed.
+2024-12-04 16:19:08 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:19:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:19:30 - Finished Spring Data repository scanning in 68 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:19:30 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:19:30 - Root WebApplicationContext: initialization completed in 1654 ms
+2024-12-04 16:19:30 - HikariPool-40 - Starting...
+2024-12-04 16:19:30 - HikariPool-40 - Added connection conn372: url=jdbc:h2:mem:de1fd0a3-262b-47be-8a28-22a6ae81c7ca user=SA
+2024-12-04 16:19:30 - HikariPool-40 - Start completed.
+2024-12-04 16:19:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:19:30 - HHH000026: Second-level cache disabled
+2024-12-04 16:19:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:19:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:19:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:30 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:19:30 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:19:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:30 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:19:30 - HikariPool-40 - Shutdown initiated...
+2024-12-04 16:19:30 - HikariPool-40 - Shutdown completed.
+2024-12-04 16:19:30 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:19:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:19:44 - Finished Spring Data repository scanning in 70 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:19:44 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:19:44 - Root WebApplicationContext: initialization completed in 1987 ms
+2024-12-04 16:19:44 - HikariPool-41 - Starting...
+2024-12-04 16:19:44 - HikariPool-41 - Added connection conn377: url=jdbc:h2:mem:f8d55b1b-d0f5-4142-9244-3c1ef8a13533 user=SA
+2024-12-04 16:19:44 - HikariPool-41 - Start completed.
+2024-12-04 16:19:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:19:44 - HHH000026: Second-level cache disabled
+2024-12-04 16:19:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:19:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:19:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:45 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:19:45 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:19:45 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:19:45 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:19:45 - HikariPool-41 - Shutdown initiated...
+2024-12-04 16:19:45 - HikariPool-41 - Shutdown completed.
+2024-12-04 16:19:45 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:20:07 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:20:07 - Finished Spring Data repository scanning in 106 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:20:07 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:20:07 - Root WebApplicationContext: initialization completed in 1937 ms
+2024-12-04 16:20:07 - HikariPool-42 - Starting...
+2024-12-04 16:20:07 - HikariPool-42 - Added connection conn381: url=jdbc:h2:mem:b072f884-3ccc-44c7-bf7b-e514a00a0ea4 user=SA
+2024-12-04 16:20:07 - HikariPool-42 - Start completed.
+2024-12-04 16:20:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:20:07 - HHH000026: Second-level cache disabled
+2024-12-04 16:20:07 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:20:07 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:20:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:20:07 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:20:07 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:20:07 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:20:07 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:20:07 - HikariPool-42 - Shutdown initiated...
+2024-12-04 16:20:07 - HikariPool-42 - Shutdown completed.
+2024-12-04 16:20:07 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:20:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:20:17 - Finished Spring Data repository scanning in 77 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:20:18 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:20:18 - Root WebApplicationContext: initialization completed in 1886 ms
+2024-12-04 16:20:18 - HikariPool-43 - Starting...
+2024-12-04 16:20:18 - HikariPool-43 - Added connection conn385: url=jdbc:h2:mem:bcee3bd6-1e4a-4a5d-b3d7-5adcaa48d2ef user=SA
+2024-12-04 16:20:18 - HikariPool-43 - Start completed.
+2024-12-04 16:20:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:20:18 - HHH000026: Second-level cache disabled
+2024-12-04 16:20:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:20:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:20:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:20:18 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:20:18 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:20:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:20:18 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:20:18 - HikariPool-43 - Shutdown initiated...
+2024-12-04 16:20:18 - HikariPool-43 - Shutdown completed.
+2024-12-04 16:20:18 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:21:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:21:02 - Finished Spring Data repository scanning in 93 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:21:02 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:21:02 - Root WebApplicationContext: initialization completed in 2117 ms
+2024-12-04 16:21:03 - HikariPool-44 - Starting...
+2024-12-04 16:21:03 - HikariPool-44 - Added connection conn392: url=jdbc:h2:mem:1e9cbf3f-c342-4dc0-bd8d-ebc934709481 user=SA
+2024-12-04 16:21:03 - HikariPool-44 - Start completed.
+2024-12-04 16:21:03 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:21:03 - HHH000026: Second-level cache disabled
+2024-12-04 16:21:03 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:21:03 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:21:03 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:03 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:21:03 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:21:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:03 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:21:03 - HikariPool-44 - Shutdown initiated...
+2024-12-04 16:21:03 - HikariPool-44 - Shutdown completed.
+2024-12-04 16:21:03 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:21:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:21:21 - Finished Spring Data repository scanning in 78 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:21:21 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:21:22 - Root WebApplicationContext: initialization completed in 2003 ms
+2024-12-04 16:21:22 - HikariPool-45 - Starting...
+2024-12-04 16:21:22 - HikariPool-45 - Added connection conn400: url=jdbc:h2:mem:94912925-fea7-4dfb-bef7-9697c4879c4b user=SA
+2024-12-04 16:21:22 - HikariPool-45 - Start completed.
+2024-12-04 16:21:22 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:21:22 - HHH000026: Second-level cache disabled
+2024-12-04 16:21:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:21:22 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:21:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:22 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:21:22 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:21:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:22 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:21:22 - HikariPool-45 - Shutdown initiated...
+2024-12-04 16:21:22 - HikariPool-45 - Shutdown completed.
+2024-12-04 16:21:22 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:21:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:21:32 - Finished Spring Data repository scanning in 102 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:21:32 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:21:32 - Root WebApplicationContext: initialization completed in 1801 ms
+2024-12-04 16:21:32 - HikariPool-46 - Starting...
+2024-12-04 16:21:32 - HikariPool-46 - Added connection conn404: url=jdbc:h2:mem:285a822e-71f1-4615-a233-903a1f131bb7 user=SA
+2024-12-04 16:21:32 - HikariPool-46 - Start completed.
+2024-12-04 16:21:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:21:32 - HHH000026: Second-level cache disabled
+2024-12-04 16:21:32 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:21:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:21:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:33 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:21:33 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:21:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:33 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:21:33 - HikariPool-46 - Shutdown initiated...
+2024-12-04 16:21:33 - HikariPool-46 - Shutdown completed.
+2024-12-04 16:21:33 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:21:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:21:53 - Finished Spring Data repository scanning in 89 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:21:53 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:21:53 - Root WebApplicationContext: initialization completed in 2044 ms
+2024-12-04 16:21:53 - HikariPool-47 - Starting...
+2024-12-04 16:21:53 - HikariPool-47 - Added connection conn409: url=jdbc:h2:mem:ad3bf99a-f777-4a7e-9b38-131863de0da5 user=SA
+2024-12-04 16:21:53 - HikariPool-47 - Start completed.
+2024-12-04 16:21:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:21:53 - HHH000026: Second-level cache disabled
+2024-12-04 16:21:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:21:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:21:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:53 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:21:53 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:21:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:21:53 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:21:53 - HikariPool-47 - Shutdown initiated...
+2024-12-04 16:21:53 - HikariPool-47 - Shutdown completed.
+2024-12-04 16:21:53 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:23:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:23:19 - Finished Spring Data repository scanning in 83 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:23:19 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:23:19 - Root WebApplicationContext: initialization completed in 1943 ms
+2024-12-04 16:23:19 - HikariPool-48 - Starting...
+2024-12-04 16:23:19 - HikariPool-48 - Added connection conn413: url=jdbc:h2:mem:eb9bd43d-91b3-468d-b887-765effdabb85 user=SA
+2024-12-04 16:23:19 - HikariPool-48 - Start completed.
+2024-12-04 16:23:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:23:19 - HHH000026: Second-level cache disabled
+2024-12-04 16:23:19 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:23:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:23:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:23:19 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:23:19 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:23:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:23:19 - HikariPool-48 - Error thrown while acquiring connection from data source
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1254) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.isOpen(SessionLocal.java:1187) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.waitIfExclusiveModeEnabled(SessionLocal.java:1500) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Command.executeQuery(Command.java:182) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:588) ~[h2-2.2.224.jar:2.2.224]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:404) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703) ~[HikariCP-5.1.0.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+2024-12-04 16:23:19 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:23:19 - HikariPool-48 - Shutdown initiated...
+2024-12-04 16:23:19 - HikariPool-48 - Shutdown completed.
+2024-12-04 16:23:19 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:23:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:23:30 - Finished Spring Data repository scanning in 84 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:23:30 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:23:30 - Root WebApplicationContext: initialization completed in 1820 ms
+2024-12-04 16:23:30 - HikariPool-49 - Starting...
+2024-12-04 16:23:30 - HikariPool-49 - Added connection conn421: url=jdbc:h2:mem:fbe4e264-d8df-41a0-82ba-5a2ce2fcd96f user=SA
+2024-12-04 16:23:30 - HikariPool-49 - Start completed.
+2024-12-04 16:23:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:23:30 - HHH000026: Second-level cache disabled
+2024-12-04 16:23:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:23:30 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:23:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:23:30 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:23:31 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:23:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:23:31 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:23:31 - HikariPool-49 - Shutdown initiated...
+2024-12-04 16:23:31 - HikariPool-49 - Shutdown completed.
+2024-12-04 16:23:31 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:24:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:24:01 - Finished Spring Data repository scanning in 77 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:24:01 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:24:01 - Root WebApplicationContext: initialization completed in 1921 ms
+2024-12-04 16:24:01 - HikariPool-50 - Starting...
+2024-12-04 16:24:01 - HikariPool-50 - Added connection conn429: url=jdbc:h2:mem:95abf2ac-d886-42bc-9921-1b820e3a1128 user=SA
+2024-12-04 16:24:01 - HikariPool-50 - Start completed.
+2024-12-04 16:24:01 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:24:01 - HHH000026: Second-level cache disabled
+2024-12-04 16:24:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:24:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:24:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:24:01 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:24:01 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:24:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:24:01 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:24:01 - HikariPool-50 - Shutdown initiated...
+2024-12-04 16:24:01 - HikariPool-50 - Shutdown completed.
+2024-12-04 16:24:01 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:24:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:24:32 - Finished Spring Data repository scanning in 86 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:24:32 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:24:32 - Root WebApplicationContext: initialization completed in 2040 ms
+2024-12-04 16:24:32 - HikariPool-51 - Starting...
+2024-12-04 16:24:32 - HikariPool-51 - Added connection conn436: url=jdbc:h2:mem:5fb27a56-996a-4c2b-89b5-7e5634e8089e user=SA
+2024-12-04 16:24:32 - HikariPool-51 - Start completed.
+2024-12-04 16:24:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:24:32 - HHH000026: Second-level cache disabled
+2024-12-04 16:24:32 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:24:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:24:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:24:33 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:24:33 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:24:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:24:33 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:24:33 - HikariPool-51 - Shutdown initiated...
+2024-12-04 16:24:33 - HikariPool-51 - Shutdown completed.
+2024-12-04 16:24:33 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:27:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:27:40 - Finished Spring Data repository scanning in 80 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:27:40 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:27:41 - Root WebApplicationContext: initialization completed in 2225 ms
+2024-12-04 16:27:41 - HikariPool-52 - Starting...
+2024-12-04 16:27:41 - HikariPool-52 - Added connection conn441: url=jdbc:h2:mem:7f5a9c7d-caaa-420b-9299-e1d5d84e5acf user=SA
+2024-12-04 16:27:41 - HikariPool-52 - Start completed.
+2024-12-04 16:27:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:27:41 - HHH000026: Second-level cache disabled
+2024-12-04 16:27:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:27:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:27:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:27:41 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:27:41 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:27:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:27:41 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:27:41 - HikariPool-52 - Shutdown initiated...
+2024-12-04 16:27:41 - HikariPool-52 - Shutdown completed.
+2024-12-04 16:27:41 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:27:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:27:58 - Finished Spring Data repository scanning in 144 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:27:58 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:27:58 - Root WebApplicationContext: initialization completed in 2337 ms
+2024-12-04 16:27:59 - HikariPool-53 - Starting...
+2024-12-04 16:27:59 - HikariPool-53 - Added connection conn445: url=jdbc:h2:mem:6a73ca28-6a47-4380-adcf-466291b9d4f8 user=SA
+2024-12-04 16:27:59 - HikariPool-53 - Start completed.
+2024-12-04 16:27:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:27:59 - HHH000026: Second-level cache disabled
+2024-12-04 16:27:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:27:59 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:27:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:27:59 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:27:59 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:27:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:27:59 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:27:59 - HikariPool-53 - Shutdown initiated...
+2024-12-04 16:27:59 - HikariPool-53 - Shutdown completed.
+2024-12-04 16:27:59 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:28:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:28:17 - Finished Spring Data repository scanning in 124 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:28:17 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:28:17 - Root WebApplicationContext: initialization completed in 2227 ms
+2024-12-04 16:28:17 - HikariPool-54 - Starting...
+2024-12-04 16:28:17 - HikariPool-54 - Added connection conn454: url=jdbc:h2:mem:b7b6b4b4-8a68-4b92-8515-1a8b3db3a04d user=SA
+2024-12-04 16:28:17 - HikariPool-54 - Start completed.
+2024-12-04 16:28:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:28:17 - HHH000026: Second-level cache disabled
+2024-12-04 16:28:17 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:28:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:28:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:28:17 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:28:17 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:28:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:28:17 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:28:17 - HikariPool-54 - Shutdown initiated...
+2024-12-04 16:28:17 - HikariPool-54 - Shutdown completed.
+2024-12-04 16:28:17 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:28:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:28:25 - Finished Spring Data repository scanning in 72 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:28:25 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:28:25 - Root WebApplicationContext: initialization completed in 1893 ms
+2024-12-04 16:28:26 - HikariPool-55 - Starting...
+2024-12-04 16:28:26 - HikariPool-55 - Added connection conn459: url=jdbc:h2:mem:6a13cfd8-64ea-45b8-a5ea-7f2c1680e882 user=SA
+2024-12-04 16:28:26 - HikariPool-55 - Start completed.
+2024-12-04 16:28:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:28:26 - HHH000026: Second-level cache disabled
+2024-12-04 16:28:26 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:28:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:28:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:28:26 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:28:26 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:28:26 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:28:26 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:28:26 - HikariPool-55 - Shutdown initiated...
+2024-12-04 16:28:26 - HikariPool-55 - Shutdown completed.
+2024-12-04 16:28:26 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:28:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:28:40 - Finished Spring Data repository scanning in 98 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:28:40 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:28:40 - Root WebApplicationContext: initialization completed in 1861 ms
+2024-12-04 16:28:40 - HikariPool-56 - Starting...
+2024-12-04 16:28:40 - HikariPool-56 - Added connection conn464: url=jdbc:h2:mem:f9636f99-7caf-41ac-9bf4-63086628825f user=SA
+2024-12-04 16:28:40 - HikariPool-56 - Start completed.
+2024-12-04 16:28:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:28:40 - HHH000026: Second-level cache disabled
+2024-12-04 16:28:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:28:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:28:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:28:40 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:28:40 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:28:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:28:40 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:28:40 - HikariPool-56 - Shutdown initiated...
+2024-12-04 16:28:40 - HikariPool-56 - Shutdown completed.
+2024-12-04 16:28:40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:29:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:29:23 - Finished Spring Data repository scanning in 77 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:29:23 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:29:23 - Root WebApplicationContext: initialization completed in 2148 ms
+2024-12-04 16:29:23 - HikariPool-57 - Starting...
+2024-12-04 16:29:23 - HikariPool-57 - Added connection conn470: url=jdbc:h2:mem:8f073711-2222-4423-8a23-0692ac795806 user=SA
+2024-12-04 16:29:23 - HikariPool-57 - Start completed.
+2024-12-04 16:29:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:29:23 - HHH000026: Second-level cache disabled
+2024-12-04 16:29:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:29:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:29:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:29:23 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:29:23 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:29:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:29:23 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:29:23 - HikariPool-57 - Shutdown initiated...
+2024-12-04 16:29:23 - HikariPool-57 - Shutdown completed.
+2024-12-04 16:29:23 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:29:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:29:28 - Finished Spring Data repository scanning in 99 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:29:29 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:29:29 - Root WebApplicationContext: initialization completed in 2040 ms
+2024-12-04 16:29:29 - HikariPool-58 - Starting...
+2024-12-04 16:29:29 - HikariPool-58 - Added connection conn475: url=jdbc:h2:mem:bf329104-653b-49c0-9eaf-864ddb1f7c14 user=SA
+2024-12-04 16:29:29 - HikariPool-58 - Start completed.
+2024-12-04 16:29:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:29:29 - HHH000026: Second-level cache disabled
+2024-12-04 16:29:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:29:29 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:29:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:29:29 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:29:29 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:29:29 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:29:29 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:29:29 - HikariPool-58 - Shutdown initiated...
+2024-12-04 16:29:29 - HikariPool-58 - Shutdown completed.
+2024-12-04 16:29:29 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:29:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:29:53 - Finished Spring Data repository scanning in 115 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:29:53 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:29:54 - Root WebApplicationContext: initialization completed in 2228 ms
+2024-12-04 16:29:54 - HikariPool-59 - Starting...
+2024-12-04 16:29:54 - HikariPool-59 - Added connection conn481: url=jdbc:h2:mem:81eff68b-fc33-49d2-9807-9c1e8fee7296 user=SA
+2024-12-04 16:29:54 - HikariPool-59 - Start completed.
+2024-12-04 16:29:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:29:54 - HHH000026: Second-level cache disabled
+2024-12-04 16:29:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:29:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:29:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:29:54 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:29:54 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:29:54 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:29:54 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:29:54 - HikariPool-59 - Shutdown initiated...
+2024-12-04 16:29:54 - HikariPool-59 - Shutdown completed.
+2024-12-04 16:29:54 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:30:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:30:09 - Finished Spring Data repository scanning in 124 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:30:09 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:30:09 - Root WebApplicationContext: initialization completed in 2488 ms
+2024-12-04 16:30:09 - HikariPool-60 - Starting...
+2024-12-04 16:30:09 - HikariPool-60 - Added connection conn489: url=jdbc:h2:mem:c21778c0-0196-474a-91fa-f13f616534a7 user=SA
+2024-12-04 16:30:09 - HikariPool-60 - Start completed.
+2024-12-04 16:30:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:30:09 - HHH000026: Second-level cache disabled
+2024-12-04 16:30:09 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:30:09 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:30:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:30:09 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:30:09 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:30:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:30:09 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:30:09 - HikariPool-60 - Shutdown initiated...
+2024-12-04 16:30:09 - HikariPool-60 - Shutdown completed.
+2024-12-04 16:30:09 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:31:02 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:31:02 - Finished Spring Data repository scanning in 74 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:31:02 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:31:02 - Root WebApplicationContext: initialization completed in 2225 ms
+2024-12-04 16:31:02 - HikariPool-61 - Starting...
+2024-12-04 16:31:02 - HikariPool-61 - Added connection conn495: url=jdbc:h2:mem:6cdd1f2e-40e0-4c10-9e79-e77cacfa87de user=SA
+2024-12-04 16:31:02 - HikariPool-61 - Start completed.
+2024-12-04 16:31:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:31:02 - HHH000026: Second-level cache disabled
+2024-12-04 16:31:02 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:31:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:31:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:02 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:31:03 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:31:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:03 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:31:03 - HikariPool-61 - Shutdown initiated...
+2024-12-04 16:31:03 - HikariPool-61 - Shutdown completed.
+2024-12-04 16:31:03 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:31:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:31:09 - Finished Spring Data repository scanning in 100 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:31:09 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:31:09 - Root WebApplicationContext: initialization completed in 2216 ms
+2024-12-04 16:31:09 - HikariPool-62 - Starting...
+2024-12-04 16:31:09 - HikariPool-62 - Added connection conn500: url=jdbc:h2:mem:a1af9319-1726-4318-b50c-9107096b5ebc user=SA
+2024-12-04 16:31:09 - HikariPool-62 - Start completed.
+2024-12-04 16:31:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:31:09 - HHH000026: Second-level cache disabled
+2024-12-04 16:31:09 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:31:09 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:31:09 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:09 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:31:09 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:31:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:09 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:31:09 - HikariPool-62 - Shutdown initiated...
+2024-12-04 16:31:10 - HikariPool-62 - Shutdown completed.
+2024-12-04 16:31:10 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:31:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:31:20 - Finished Spring Data repository scanning in 108 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:31:20 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:31:20 - Root WebApplicationContext: initialization completed in 2185 ms
+2024-12-04 16:31:20 - HikariPool-63 - Starting...
+2024-12-04 16:31:20 - HikariPool-63 - Added connection conn506: url=jdbc:h2:mem:7af8d540-bcbe-4d1f-a9f6-e980f13739f8 user=SA
+2024-12-04 16:31:20 - HikariPool-63 - Start completed.
+2024-12-04 16:31:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:31:20 - HHH000026: Second-level cache disabled
+2024-12-04 16:31:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:31:20 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:31:20 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:20 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:31:21 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:31:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:21 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:31:21 - HikariPool-63 - Shutdown initiated...
+2024-12-04 16:31:21 - HikariPool-63 - Shutdown completed.
+2024-12-04 16:31:21 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:31:41 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:31:41 - Finished Spring Data repository scanning in 136 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:31:41 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:31:41 - Root WebApplicationContext: initialization completed in 2300 ms
+2024-12-04 16:31:41 - HikariPool-64 - Starting...
+2024-12-04 16:31:41 - HikariPool-64 - Added connection conn512: url=jdbc:h2:mem:875847d2-d9f8-47e9-99fc-fe52026d000d user=SA
+2024-12-04 16:31:41 - HikariPool-64 - Start completed.
+2024-12-04 16:31:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:31:41 - HHH000026: Second-level cache disabled
+2024-12-04 16:31:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:31:41 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:31:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:41 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:31:42 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.services.TransactionsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:31:42 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:31:42 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:31:42 - HikariPool-64 - Shutdown initiated...
+2024-12-04 16:31:42 - HikariPool-64 - Shutdown completed.
+2024-12-04 16:31:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.controller.TransactionsController required a bean of type 'com.wg.services.TransactionsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.services.TransactionsService' in your configuration.
+
+2024-12-04 16:32:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:32:11 - Finished Spring Data repository scanning in 82 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:32:11 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:32:11 - Root WebApplicationContext: initialization completed in 2090 ms
+2024-12-04 16:32:11 - HikariPool-65 - Starting...
+2024-12-04 16:32:11 - HikariPool-65 - Added connection conn517: url=jdbc:h2:mem:e1b7db9f-81e6-4669-839f-080626be6330 user=SA
+2024-12-04 16:32:11 - HikariPool-65 - Start completed.
+2024-12-04 16:32:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:32:11 - HHH000026: Second-level cache disabled
+2024-12-04 16:32:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:32:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:32:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:32:11 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:32:12 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionsController' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\controller\TransactionsController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'transactionsService' defined in file [C:\Users\spurohit\OneDrive - WatchGuard Technologies Inc\Documents\eclipse-workspace\SchoolManagementSystemMaven2Copy\target\classes\com\wg\services\TransactionsService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.wg.repository.interfaces.InterfaceTransactionsDAO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-04 16:32:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:32:12 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:32:12 - HikariPool-65 - Shutdown initiated...
+2024-12-04 16:32:12 - HikariPool-65 - Shutdown completed.
+2024-12-04 16:32:12 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.wg.services.TransactionsService required a bean of type 'com.wg.repository.interfaces.InterfaceTransactionsDAO' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.wg.repository.interfaces.InterfaceTransactionsDAO' in your configuration.
+
+2024-12-04 16:32:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:32:39 - Finished Spring Data repository scanning in 78 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:32:39 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:32:39 - Root WebApplicationContext: initialization completed in 2275 ms
+2024-12-04 16:32:40 - HikariPool-66 - Starting...
+2024-12-04 16:32:40 - HikariPool-66 - Added connection conn522: url=jdbc:h2:mem:18991740-89fc-48e6-b66d-21d04b795b97 user=SA
+2024-12-04 16:32:40 - HikariPool-66 - Start completed.
+2024-12-04 16:32:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:32:40 - HHH000026: Second-level cache disabled
+2024-12-04 16:32:40 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:32:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:32:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:32:40 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:32:40 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:32:40 - LiveReload server is running on port 35729
+2024-12-04 16:32:40 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:32:40 - Condition evaluation unchanged
+2024-12-04 16:32:50 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 16:32:50 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:32:50 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:32:50 - HikariPool-66 - Shutdown initiated...
+2024-12-04 16:32:50 - HikariPool-66 - Shutdown completed.
+2024-12-04 16:32:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:32:52 - Finished Spring Data repository scanning in 109 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:32:52 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:32:52 - Root WebApplicationContext: initialization completed in 2222 ms
+2024-12-04 16:32:52 - HikariPool-67 - Starting...
+2024-12-04 16:32:52 - HikariPool-67 - Added connection conn532: url=jdbc:h2:mem:5d2cae7d-05c1-411c-89d1-ca2f6d98ed8d user=SA
+2024-12-04 16:32:52 - HikariPool-67 - Start completed.
+2024-12-04 16:32:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:32:52 - HHH000026: Second-level cache disabled
+2024-12-04 16:32:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:32:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:32:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:32:53 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:32:53 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:32:53 - LiveReload server is running on port 35729
+2024-12-04 16:32:53 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:32:53 - Condition evaluation unchanged
+2024-12-04 16:33:30 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 16:33:30 - Completed initialization in 0 ms
+2024-12-04 16:33:30 - Securing GET /api/user/L209127a/transactions
+2024-12-04 16:33:30 - Securing GET /error
+2024-12-04 16:33:30 - Set SecurityContextHolder to anonymous SecurityContext
+2024-12-04 16:33:37 - Securing POST /api/authenticate
+2024-12-04 16:33:37 - Set SecurityContextHolder to anonymous SecurityContext
+2024-12-04 16:33:37 - Secured POST /api/authenticate
+2024-12-04 16:33:37 - Authenticated user
+2024-12-04 16:33:44 - Securing GET /api/user/L209127a/transactions
+2024-12-04 16:33:44 - Secured GET /api/user/L209127a/transactions
+2024-12-04 16:33:44 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/user/L209127a/transactions.]
+2024-12-04 16:34:01 - Securing GET /api/user/L209127a/transaction
+2024-12-04 16:34:01 - Secured GET /api/user/L209127a/transaction
+2024-12-04 16:34:50 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 16:34:50 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:34:50 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:34:50 - HikariPool-67 - Shutdown initiated...
+2024-12-04 16:34:50 - HikariPool-67 - Shutdown completed.
+2024-12-04 16:34:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:34:52 - Finished Spring Data repository scanning in 64 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:34:52 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:34:52 - Root WebApplicationContext: initialization completed in 1712 ms
+2024-12-04 16:34:52 - HikariPool-68 - Starting...
+2024-12-04 16:34:52 - HikariPool-68 - Added connection conn542: url=jdbc:h2:mem:378466b9-726f-4893-9a74-aa02e6c96f09 user=SA
+2024-12-04 16:34:52 - HikariPool-68 - Start completed.
+2024-12-04 16:34:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:34:52 - HHH000026: Second-level cache disabled
+2024-12-04 16:34:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:34:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:34:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:34:52 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:34:53 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:34:53 - LiveReload server is running on port 35729
+2024-12-04 16:34:53 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:34:53 - Condition evaluation unchanged
+2024-12-04 16:34:53 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 16:34:53 - Completed initialization in 0 ms
+2024-12-04 16:34:53 - Securing GET /api/user/L209127a/transaction
+2024-12-04 16:34:53 - Secured GET /api/user/L209127a/transaction
+2024-12-04 16:34:55 - Securing GET /api/user/L209127a/transaction
+2024-12-04 16:34:55 - Secured GET /api/user/L209127a/transaction
+2024-12-04 16:35:25 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 16:35:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:35:25 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:35:25 - HikariPool-68 - Shutdown initiated...
+2024-12-04 16:35:25 - HikariPool-68 - Shutdown completed.
+2024-12-04 16:35:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:35:27 - Finished Spring Data repository scanning in 67 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:35:27 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:35:27 - Root WebApplicationContext: initialization completed in 2086 ms
+2024-12-04 16:35:27 - HikariPool-69 - Starting...
+2024-12-04 16:35:27 - HikariPool-69 - Added connection conn552: url=jdbc:h2:mem:c29ad2b1-1c3c-49d0-bade-3e72810886f7 user=SA
+2024-12-04 16:35:27 - HikariPool-69 - Start completed.
+2024-12-04 16:35:27 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:35:27 - HHH000026: Second-level cache disabled
+2024-12-04 16:35:27 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:35:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:35:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:35:28 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:35:28 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:35:28 - LiveReload server is running on port 35729
+2024-12-04 16:35:28 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:35:28 - Condition evaluation unchanged
+2024-12-04 16:35:29 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 16:35:29 - Completed initialization in 1 ms
+2024-12-04 16:35:29 - Securing GET /api/user/L209127a/transaction
+2024-12-04 16:35:29 - Secured GET /api/user/L209127a/transaction
+2024-12-04 16:35:59 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 16:35:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:35:59 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:35:59 - HikariPool-69 - Shutdown initiated...
+2024-12-04 16:35:59 - HikariPool-69 - Shutdown completed.
+2024-12-04 16:36:01 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:36:01 - Finished Spring Data repository scanning in 54 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:36:01 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:36:01 - Root WebApplicationContext: initialization completed in 2191 ms
+2024-12-04 16:36:01 - HikariPool-70 - Starting...
+2024-12-04 16:36:01 - HikariPool-70 - Added connection conn562: url=jdbc:h2:mem:d8c2a4d6-30b6-4d46-9cc4-8c7069a5016b user=SA
+2024-12-04 16:36:01 - HikariPool-70 - Start completed.
+2024-12-04 16:36:01 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:36:01 - HHH000026: Second-level cache disabled
+2024-12-04 16:36:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:36:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:36:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:36:02 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:36:02 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:36:02 - LiveReload server is running on port 35729
+2024-12-04 16:36:02 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:36:02 - Condition evaluation unchanged
+2024-12-04 16:36:03 - Initializing Servlet 'dispatcherServlet'
+2024-12-04 16:36:03 - Completed initialization in 1 ms
+2024-12-04 16:36:03 - Securing GET /api/user/L209127a/transaction
+2024-12-04 16:36:03 - Secured GET /api/user/L209127a/transaction
+2024-12-04 16:36:21 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-04 16:36:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:36:21 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-04 16:36:21 - HikariPool-70 - Shutdown initiated...
+2024-12-04 16:36:21 - HikariPool-70 - Shutdown completed.
+2024-12-04 16:36:22 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 16:36:22 - Finished Spring Data repository scanning in 136 ms. Found 0 JPA repository interfaces.
+2024-12-04 16:36:23 - Tomcat initialized with port 8080 (http)
+2024-12-04 16:36:23 - Root WebApplicationContext: initialization completed in 2017 ms
+2024-12-04 16:36:23 - HikariPool-71 - Starting...
+2024-12-04 16:36:23 - HikariPool-71 - Added connection conn572: url=jdbc:h2:mem:f8b8b6e0-1fcc-4294-81e2-b7778d61f4ef user=SA
+2024-12-04 16:36:23 - HikariPool-71 - Start completed.
+2024-12-04 16:36:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 16:36:23 - HHH000026: Second-level cache disabled
+2024-12-04 16:36:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 16:36:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 16:36:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 16:36:23 - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-04 16:36:23 - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-04 16:36:23 - LiveReload server is running on port 35729
+2024-12-04 16:36:23 - Tomcat started on port 8080 (http) with context path '/'
+2024-12-04 16:36:23 - Condition evaluation unchanged

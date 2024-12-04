@@ -55,9 +55,15 @@ public class UserDAO extends GenericDAO<User> implements InterfaceUserDAO {
 	}
 
 	@Override
-	public User getUserByUsername(String username) throws SQLException, ClassNotFoundException {
+	public User getUserByUsername(String username) {
 		String selectSQL = "SELECT * FROM User WHERE username = \"" + username + "\"";
-		return executeGetQuery(selectSQL);
+		try {
+			return executeGetQuery(selectSQL);
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	@Override

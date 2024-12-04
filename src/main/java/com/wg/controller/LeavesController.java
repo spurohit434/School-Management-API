@@ -6,11 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wg.dto.ApiResponseHandler;
@@ -33,7 +34,7 @@ public class LeavesController {
 	public LeavesController() {
 	}
 
-	@PutMapping("/user/{id}/leave/approve")
+	@PatchMapping("/user/{id}/leave/approve")
 	public ResponseEntity<Object> approveLeave(@PathVariable String id) {
 		boolean flag = leavesService.approveLeave(id);
 		if (flag == true) {
@@ -45,7 +46,7 @@ public class LeavesController {
 				HttpStatus.BAD_REQUEST, null);
 	}
 
-	@PutMapping("/user/{id}/leave/reject")
+	@PatchMapping("/user/{id}/leave/reject")
 	public ResponseEntity<Object> rejectLeave(@PathVariable String id) {
 		boolean flag = leavesService.rejectLeave(id);
 		if (flag == true) {
@@ -55,6 +56,26 @@ public class LeavesController {
 
 		return ApiResponseHandler.apiResponseHandler("Leaves can not be rejected", StatusResponse.Error,
 				HttpStatus.BAD_REQUEST, null);
+	}
+
+	@PatchMapping("/user/{id}/leave")
+	public ResponseEntity<Object> updateLeaveStatus(@PathVariable String id,
+			@RequestParam(required = true) String action) {
+		if ("approve".equals(action)) {
+			boolean isApproved = leavesService.approveLeave(id);
+			if (isApproved == true) {
+				return ApiResponseHandler.apiResponseHandler("Leaves approved Successfully", StatusResponse.Success,
+						HttpStatus.OK, null);
+			}
+		} else if ("reject".equals(action)) {
+			boolean isRejected = leavesService.rejectLeave(id);
+			if (isRejected == true) {
+				return ApiResponseHandler.apiResponseHandler("Leaves rejected Successfully", StatusResponse.Success,
+						HttpStatus.OK, null);
+			}
+		}
+		return ApiResponseHandler.apiResponseHandler("Invalid action", StatusResponse.Error, HttpStatus.BAD_REQUEST,
+				null);
 	}
 
 	@PostMapping("/user/{id}/leave")

@@ -14,6 +14,7 @@ import com.wg.exceptions.GeneralException;
 import com.wg.exceptions.NotFoundExceptions;
 import com.wg.helper.LoggingUtil;
 import com.wg.model.Fee;
+import com.wg.model.Transactions;
 import com.wg.model.User;
 import com.wg.repository.interfaces.InterfaceFeeDAO;
 import com.wg.repository.interfaces.InterfaceUserDAO;
@@ -55,6 +56,9 @@ public class FeeService {
 			double totalFees = feesAmount + fine;
 			System.out.println("Total Payalbe amount is: " + totalFees);
 			boolean flag = feeDAO.payFees(userId);
+			String notes = "fees paid by user";
+			Transactions transaction = new Transactions(userId, totalFees, notes);
+			boolean flag1 = feeDAO.addTransaction(transaction);
 			if (flag == true) {
 				return totalFees;
 			} else {

@@ -24,7 +24,6 @@ import com.wg.helper.PasswordUtil;
 import com.wg.mapper.UserMapper;
 import com.wg.model.StatusResponse;
 import com.wg.model.User;
-import com.wg.security.JwtUtil;
 import com.wg.services.interfaces.InterfaceUserService;
 
 import jakarta.validation.Valid;
@@ -86,32 +85,31 @@ public class UserController {
 	}
 
 	@GetMapping("/users")
-	public ResponseEntity<Object> getAllUser(@RequestParam(defaultValue = "1") int page,
-			@RequestParam(defaultValue = "10") int size, @RequestHeader("Authorization") String token) {
-		String role = getRole(token);
+	public ResponseEntity<Object> getAllUser(@RequestParam(defaultValue = "1", required = false) int page,
+			@RequestParam(defaultValue = "10", required = false) int size,
+			@RequestHeader("Authorization") String token) {
 		// Fetch paginated user list from the service layer
-		if (role.equalsIgnoreCase("Role_Admin")) {
-			List<User> users = userService.getAllUser(page, size);
-			// Get the total number of users (for pagination)
-			int totalElements = userService.getTotalUserCount();
-			// map all the users to the DTO
-			List<UserDto> dtos = new ArrayList<>();
-			for (User user : users) {
-				UserDto dto = UserMapper.mapUser(user);
-				dtos.add(dto);
-			}
-			// Create PaginatedResponse object
-			PaginatedResponse<UserDto> paginatedResponse = new PaginatedResponse<>(dtos, page, size, totalElements);
-			// Return the paginated response
-			return ApiResponseHandler.apiResponseHandler("User Fetched Successfully", StatusResponse.Success,
-					HttpStatus.OK, paginatedResponse);
+		List<User> users = userService.getAllUser(page, size);
+		// Get the total number of users (for pagination)
+		int totalElements = userService.getTotalUserCount();
+		// map all the users to the DTO
+		List<UserDto> dtos = new ArrayList<>();
+		for (User user : users) {
+			UserDto dto = UserMapper.mapUser(user);
+			dtos.add(dto);
 		}
-		return ApiResponseHandler.apiResponseHandler("Unauthorized user", StatusResponse.Error, HttpStatus.UNAUTHORIZED,
-				null);
+		// Create PaginatedResponse object
+		PaginatedResponse<UserDto> paginatedResponse = new PaginatedResponse<>(dtos, page, size, totalElements);
+		// Return the paginated response
+		return ApiResponseHandler.apiResponseHandler("User Fetched Successfully", StatusResponse.Success, HttpStatus.OK,
+				paginatedResponse);
 	}
 
 	@PutMapping("/user/{id}")
 	public ResponseEntity<Object> updateUser(@PathVariable String id, @RequestBody User updatedUser) {
+		PasswordUtil passwordUtil = new PasswordUtil();
+		String hashedPassword = passwordUtil.hashPassword(updatedUser.getPassword());
+		updatedUser.setPassword(hashedPassword);
 		boolean flag = userService.updateUser(id, updatedUser);
 		if (flag == true) {
 			return ApiResponseHandler.apiResponseHandler("User Updated Successfully", StatusResponse.Success,
@@ -119,13 +117,5 @@ public class UserController {
 		}
 		return ApiResponseHandler.apiResponseHandler("User can not be updated", StatusResponse.Error,
 				HttpStatus.BAD_REQUEST, null);
-	}
-
-	private String getRole(String token) {
-		String jwtToken = token.startsWith("Bearer ") ? token.substring(7) : token;
-		JwtUtil util = new JwtUtil();
-		// Decode and extract claims from the JWT token
-		String role = util.extractRole(jwtToken);
-		return role;
 	}
 }
